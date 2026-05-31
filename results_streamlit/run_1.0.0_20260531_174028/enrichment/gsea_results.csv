@@ -1,0 +1,3 @@
+pathway_id,enrichment_score_es,normalized_enrichment_score_nes,nominal_pvalue,fdr_qvalue,genes_in_set_count,leading_edge_genes
+map03010,0.7778,1.0055,0.5769,1.0,1,O91741
+R-HSA-1640170,0.7778,1.0033,0.6136,0.5938,1,O91741

@@ -1,0 +1,11 @@
+protein_id,subject_db_id,uniprot_organism_code,ictv_class,ictv_order,ictv_family,ictv_genus,baltimore_group
+NC_007373.1_predicted_orf_1,sp|O91740|PB2_I93A0,I93A0,Unclassified Class,Unclassified Order,Unclassified Viral Family,Unclassified Genus,Unknown Group
+NC_007372.1_predicted_orf_2,sp|O91741|RDRP_I93A0,I93A0,Unclassified Class,Unclassified Order,Unclassified Viral Family,Unclassified Genus,Unknown Group
+NC_007371.1_predicted_orf_1,sp|O91742|PA_I93A0,I93A0,Unclassified Class,Unclassified Order,Unclassified Viral Family,Unclassified Genus,Unknown Group
+NC_007366.1_predicted_orf_1,sp|O11283|HEMA_I89A2,I89A2,Unclassified Class,Unclassified Order,Unclassified Viral Family,Unclassified Genus,Unknown Group
+NC_007369.1_predicted_orf_3,sp|P16982|NCAP_I83A8,I83A8,Unclassified Class,Unclassified Order,Unclassified Viral Family,Unclassified Genus,Unknown Group
+NC_007368.1_predicted_orf_1,sp|O91745|NRAM_I96A1,I96A1,Unclassified Class,Unclassified Order,Unclassified Viral Family,Unclassified Genus,Unknown Group
+NC_007370.1_predicted_orf_1,sp|Q67253|NS1_I89A1,I89A1,Unclassified Class,Unclassified Order,Unclassified Viral Family,Unclassified Genus,Unknown Group
+NC_007370.1_predicted_orf_3,sp|P69257|NEP_I77A0,I77A0,Unclassified Class,Unclassified Order,Unclassified Viral Family,Unclassified Genus,Unknown Group
+NC_007367.1_predicted_orf_2,sp|Q77GW1|M1_I89A2,I89A2,Unclassified Class,Unclassified Order,Unclassified Viral Family,Unclassified Genus,Unknown Group
+NC_007367.1_predicted_orf_7,sp|Q38SQ7|M2_I83A8,I83A8,Unclassified Class,Unclassified Order,Unclassified Viral Family,Unclassified Genus,Unknown Group
