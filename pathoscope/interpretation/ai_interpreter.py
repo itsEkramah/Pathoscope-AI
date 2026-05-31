@@ -8,6 +8,31 @@ import pandas as pd
 from pydantic import BaseModel, Field
 from loguru import logger
 
+
+def load_dotenv_from_repo_root() -> None:
+    """Load environment variables from a .env file located at the repository root."""
+    repo_root = Path(__file__).resolve().parents[2]
+    dotenv_path = repo_root / ".env"
+    if not dotenv_path.exists():
+        return
+
+    try:
+        with open(dotenv_path, "r", encoding="utf-8") as stream:
+            for line in stream:
+                line = line.strip()
+                if not line or line.startswith("#") or "=" not in line:
+                    continue
+                key, value = line.split("=", 1)
+                key = key.strip()
+                value = value.strip().strip('"\'')
+                if key and key not in os.environ:
+                    os.environ[key] = value
+    except Exception as exc:
+        logger.warning(f"Failed to load .env file from {dotenv_path}: {exc}")
+
+
+load_dotenv_from_repo_root()
+
 # Strict Structured Output Schema to enforce hallucination bounds and correct keys
 class AIInterpretationOutput(BaseModel):
     concise_summary: str = Field(
@@ -729,15 +754,11 @@ def call_llm_api(
     logger.info(f"Connecting to AI Provider: {provider} (Model: {model_name}, Temp: {temp})")
     
     if provider == "openai":
-        OPENAI_HARDCODED_KEY = "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"
-        api_key = OPENAI_HARDCODED_KEY.strip()
-        if not api_key:
-            api_key = os.getenv(config.ai_interpretation.api_key_env_var)
-            
+        api_key = os.getenv(config.ai_interpretation.api_key_env_var) or os.getenv("OPENAI_API_KEY")
         if not api_key:
             logger.warning(f"OpenAI API key variable {config.ai_interpretation.api_key_env_var} not found in environment.")
             return None
-            
+
         url = "https://api.openai.com/v1/chat/completions"
         headers = {
             "Content-Type": "application/json",
@@ -764,13 +785,7 @@ def call_llm_api(
             logger.warning(f"Failed to query OpenAI API endpoint: {e}")
             
     elif provider == "gemini":
-        GEMINI_HARDCODED_KEY = "AIzaSyDZS01ro5iOIFovBjf6eHQZGwoixewYT8s"
-        api_key = GEMINI_HARDCODED_KEY.strip()
-        if not api_key:
-            api_key = os.getenv("GEMINI_API_KEY")
-        if not api_key:
-            api_key = os.getenv(config.ai_interpretation.api_key_env_var)
-            
+        api_key = os.getenv(config.ai_interpretation.api_key_env_var) or os.getenv("GEMINI_API_KEY")
         if not api_key:
             logger.warning("Gemini API key not found.")
             return None
