@@ -1,0 +1,2 @@
+sequence_id,length,gc_percent,ambiguous_count,ambiguous_percent,status,rejection_reason,duplicate_type
+AF288641.1,2119,43.46,1,0.05,ACCEPTED,,None

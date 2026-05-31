@@ -1,0 +1,14 @@
+protein_id,subject_db_id,uniprot_organism_code,ictv_class,ictv_order,ictv_family,ictv_genus,baltimore_group
+NC_045512.2_predicted_orf_3,sp|P0DTC1|R1A_SARS2,SARS2,Pisoniviricetes,Nidovirales,Coronaviridae,Betacoronavirus,Group IV (+ssRNA)
+NC_045512.2_predicted_orf_67,sp|P0DTD1|R1AB_SARS2,SARS2,Pisoniviricetes,Nidovirales,Coronaviridae,Betacoronavirus,Group IV (+ssRNA)
+NC_045512.2_predicted_orf_101,sp|P0DTC2|SPIKE_SARS2,SARS2,Pisoniviricetes,Nidovirales,Coronaviridae,Betacoronavirus,Group IV (+ssRNA)
+NC_045512.2_predicted_orf_118,sp|P0DTC3|AP3A_SARS2,SARS2,Pisoniviricetes,Nidovirales,Coronaviridae,Betacoronavirus,Group IV (+ssRNA)
+NC_045512.2_predicted_orf_123,sp|P59633|NS3B_SARS,SARS,Unclassified Class,Unclassified Order,Unclassified Viral Family,Unclassified Genus,Unknown Group
+NC_045512.2_predicted_orf_124,sp|P0DTC4|VEMP_SARS2,SARS2,Pisoniviricetes,Nidovirales,Coronaviridae,Betacoronavirus,Group IV (+ssRNA)
+NC_045512.2_predicted_orf_125,sp|P0DTC5|VME1_SARS2,SARS2,Pisoniviricetes,Nidovirales,Coronaviridae,Betacoronavirus,Group IV (+ssRNA)
+NC_045512.2_predicted_orf_128,sp|P0DTC6|NS6_SARS2,SARS2,Pisoniviricetes,Nidovirales,Coronaviridae,Betacoronavirus,Group IV (+ssRNA)
+NC_045512.2_predicted_orf_130,sp|P0DTC7|NS7A_SARS2,SARS2,Pisoniviricetes,Nidovirales,Coronaviridae,Betacoronavirus,Group IV (+ssRNA)
+NC_045512.2_predicted_orf_133,sp|P0DTD8|NS7B_SARS2,SARS2,Pisoniviricetes,Nidovirales,Coronaviridae,Betacoronavirus,Group IV (+ssRNA)
+NC_045512.2_predicted_orf_134,sp|P0DTC8|NS8_SARS2,SARS2,Pisoniviricetes,Nidovirales,Coronaviridae,Betacoronavirus,Group IV (+ssRNA)
+NC_045512.2_predicted_orf_135,sp|P0DTC9|NCAP_SARS2,SARS2,Pisoniviricetes,Nidovirales,Coronaviridae,Betacoronavirus,Group IV (+ssRNA)
+NC_045512.2_predicted_orf_144,sp|A0A663DJA2|ORF10_SARS2,SARS2,Pisoniviricetes,Nidovirales,Coronaviridae,Betacoronavirus,Group IV (+ssRNA)

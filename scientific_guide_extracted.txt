@@ -1,0 +1,554 @@
+ Complete Scientific Development Guide
+Automated Viral Functional Genomics Pipeline
+For Functional Genomics Course
+National Centre for Bioinformatics (NCB), Quaid-i-Azam University
+Project Information
+Project Title
+PathoScope AI: An Automated Viral Functional Genomics Pipeline for Sequence Annotation, Pathway Mapping, and AI-Assisted Biological Interpretation
+Submitted To
+Sir Ghulam Abbas
+Submitted By
+Muhammad Ekramah — 04282213040
+Taha Javed — 04282213034
+Asad Imam — 04282213052
+Mishal Tariq — 04282213021
+Course
+Functional Genomics
+Submission Date
+May 12, 2026
+1. Introduction
+Recent advancements in Next Generation Sequencing (NGS) technologies have significantly accelerated research in genomics, transcriptomics, and viral bioinformatics. Viral genome sequencing produces large-scale biological datasets that require automated computational pipelines for accurate processing, annotation, pathway analysis, and biological interpretation.
+Traditional manual analysis approaches are:
+time-consuming,
+difficult to scale,
+error-prone,
+and often irreproducible.
+Functional genomics focuses on identifying:
+gene functions,
+protein interactions,
+molecular pathways,
+and biological significance of genomic elements.
+Modern bioinformatics research therefore depends heavily on automated computational workflows capable of handling complex biological datasets reproducibly.
+This project proposes the development of PathoScope AI, a lightweight but scientifically defensible viral functional genomics pipeline that:
+accepts raw viral genomic sequence data,
+performs automated preprocessing,
+predicts coding regions,
+annotates proteins,
+maps pathways and domains,
+performs enrichment analysis,
+generates scientific visualizations,
+and produces AI-assisted biological interpretation reports.
+The project is designed to simulate a real-world bioinformatics research workflow while remaining computationally feasible for academic implementation on standard student hardware.
+2. Problem Statement
+NGS-based viral genomic datasets contain large amounts of sequence information that require multiple computational processing stages, including:
+quality control,
+sequence validation,
+ORF prediction,
+functional annotation,
+pathway mapping,
+statistical filtering,
+and biological interpretation.
+Most existing workflows require:
+manual execution of multiple tools,
+fragmented processing steps,
+and non-reproducible analysis pipelines.
+There is therefore a need for a modular and automated computational pipeline capable of:
+processing raw viral sequences,
+integrating biological databases,
+performing statistically valid analyses,
+and generating biologically meaningful outputs automatically.
+3. Core Project Objective
+The main objective of PathoScope AI is to build a scientifically defensible automated viral functional genomics pipeline that:
+Accepts raw FASTA / FASTQ files.
+Performs preprocessing and quality control automatically.
+Predicts ORFs using biologically valid approaches.
+Performs functional annotation using real alignment tools.
+Maps pathways and conserved domains.
+Applies statistical filtering and enrichment analysis.
+Generates scientific visualizations.
+Produces AI-assisted biological interpretation.
+Generates CSV, HTML, and PDF reports.
+Executes the complete workflow automatically from input to output.
+4. Project Objectives
+The proposed system aims to:
+Develop an automated viral genomics analysis pipeline.
+Perform preprocessing and validation of sequence datasets.
+Identify Open Reading Frames (ORFs).
+Translate ORFs into protein sequences.
+Perform similarity-based functional annotation.
+Integrate biological pathway and domain databases.
+Perform statistically valid enrichment analysis.
+Generate publication-style visualizations.
+Generate AI-assisted biological summaries.
+Produce reproducible automated reports.
+5. Scientifically Correct Pipeline Philosophy
+Correct Workflow
+Biology → Computation → Statistics → Interpretation
+This means:
+biological computation occurs first,
+statistical validation occurs second,
+AI interpretation occurs last.
+Incorrect Workflow
+AI → Fake Biology → Fake Statistics
+AI must NEVER:
+generate ORFs,
+fabricate p-values,
+invent pathways,
+generate fake enrichment,
+create unsupported biological claims.
+AI should only explain validated computational outputs.
+6. Professor Requirements and Expectations
+A. Input Data Handling
+The project must:
+accept FASTA, FASTQ, CSV, and TXT files,
+process complete raw genomic files automatically,
+support gene lists and expression matrices,
+handle multiple gene identifier systems:
+Ensembl IDs,
+Entrez IDs,
+Gene Symbols.
+The pipeline should normalize IDs using HGNC mapping wherever applicable.
+B. Full Automation Requirement
+The complete workflow must execute automatically:
+Input → Processing → Analysis → Output
+No manual intervention should be required after input submission.
+C. Coding Expectations
+The project must:
+use Python,
+include modular functions,
+include file handling,
+integrate APIs/databases,
+implement statistical filtering,
+implement threshold logic,
+generate reproducible outputs.
+D. Statistical Analysis Requirements
+The pipeline must implement:
+p-value filtering,
+FDR correction,
+enrichment analysis,
+configurable thresholds.
+E. Reproducibility Requirements
+The system must include:
+modular architecture,
+configuration files,
+logging systems,
+reproducible execution,
+clear documentation.
+7. Final Scientifically Defensible Pipeline Design
+Input Layer
+Raw viral FASTA / FASTQ files
+Optional metadata files
+Gene expression matrices (optional)
+↓
+Preprocessing Layer
+Sequence validation
+Ambiguous nucleotide handling
+Length quality control
+Duplicate handling
+FASTQ QC
+Normalization
+↓
+ORF Prediction Layer
+True 6-frame scanning
+Coordinate-aware ORF prediction
+Overlap resolution
+Strand tracking
+↓
+Protein Translation
+↓
+Functional Annotation
+BLASTp / DIAMOND
+Real E-values
+Identity filtering
+Coverage filtering
+↓
+Domain Detection
+Pfam
+HMMER
+↓
+Pathway Mapping
+KEGG
+Reactome
+GO
+↓
+Statistical Analysis
+Hypergeometric enrichment
+Fisher exact test
+Benjamini–Hochberg FDR correction
+↓
+Visualization
+Barplots
+Bubble plots
+Volcano plots
+Network graphs
+↓
+AI-Assisted Interpretation
+Biological summaries only
+No independent analysis
+↓
+Report Generation
+CSV
+HTML
+PDF
+8. Required Project Architecture
+project/
+│
+├── app/
+├── preprocessing/
+├── orf_prediction/
+├── annotation/
+├── pathway_mapping/
+├── statistics/
+├── visualization/
+├── reporting/
+├── ai_summary/
+├── config/
+├── databases/
+├── outputs/
+├── logs/
+├── tests/
+├── sample_data/
+├── run_pipeline.py
+├── requirements.txt
+├── environment.yml
+└── README.md
+9. Important Strategic Advice
+DO NOT:
+build massive production-grade genomics platforms,
+create fake enrichment statistics,
+fabricate biological findings,
+generate placeholder outputs,
+hardcode pathways,
+use AI for deterministic computation.
+DO:
+build module-by-module,
+validate each stage scientifically,
+test outputs continuously,
+use real biological databases,
+use reproducible workflows.
+10. Biggest Mistake to Avoid
+Never ask Antigravity:
+“Generate the entire project at once.”
+This usually creates:
+disconnected modules,
+fake biology,
+hallucinated statistics,
+broken imports,
+unrealistic pipelines.
+Instead, treat Antigravity like a junior bioinformatics developer working under your supervision.
+11. Correct Development Strategy
+The project must be developed in iterative scientific stages.
+PHASE 1 — PROJECT ARCHITECTURE
+Goal
+Design the complete software architecture before coding biological modules.
+Focus Areas
+folder structure,
+module responsibilities,
+execution flow,
+CLI design,
+configuration system,
+logging strategy,
+dependency management,
+caching system,
+reproducibility.
+Important
+No biology implementation yet.
+Phase 1 Prompt
+You are an expert bioinformatics software architect and computational genomics engineer.
+Design a modular, scientifically defensible Python project architecture for a Functional Genomics university project titled:
+"PathoScope AI: An Automated Viral Functional Genomics Pipeline for Sequence Annotation, Pathway Mapping, and AI-Assisted Biological Interpretation"
+IMPORTANT:
+Do NOT implement fake biology.
+Do NOT simulate statistics.
+Do NOT create placeholder functions.
+Your task is ONLY to design the software architecture and workflow.
+Requirements:
+1. The pipeline must accept raw viral FASTA files.
+2. The pipeline must automatically process input through all stages.
+3. The pipeline must separate deterministic bioinformatics analysis from AI interpretation.
+4. The pipeline must be modular and reproducible.
+5. The pipeline must run on a student laptop.
+Design:
+- folder structure
+- module responsibilities
+- execution flow
+- CLI design
+- config system
+- logging system
+- caching system
+- database handling strategy
+- output directory structure
+- environment setup
+- dependency management
+- error handling framework
+Include:
+- exact file names
+- purpose of every module
+- data flow between modules
+- recommended libraries
+- recommended external tools
+- where subprocess calls should be used
+- where APIs should be avoided
+- how temporary files should be handled
+- how outputs should be versioned
+Design for:
+- FASTA preprocessing
+- ORF prediction
+- protein translation
+- BLAST/DIAMOND annotation
+- Pfam/HMMER domain search
+- KEGG/Reactome mapping
+- enrichment analysis
+- visualization
+- AI interpretation
+- HTML/PDF report generation
+IMPORTANT:
+The design must avoid:
+- fake E-values
+- fake databases
+- hardcoded statistics
+- redundant ORFs
+- static pathway mappings
+- AI replacing analysis
+- fabricated enrichment
+Do not generate implementation code yet.
+Only architecture and engineering design.
+PHASE 2 — PREPROCESSING MODULE
+Goal
+Implement only preprocessing and quality control.
+Responsibilities
+FASTA/FASTQ validation
+Invalid character detection
+Ambiguous nucleotide handling
+Duplicate detection
+Length filtering
+QC reporting
+Important
+Do NOT implement:
+ORF prediction,
+annotation,
+AI,
+pathway analysis.
+Phase 2 Prompt
+Build ONLY the preprocessing module for PathoScope AI.
+Requirements:
+- Accept FASTA, FASTQ, CSV, TXT.
+- Validate sequences.
+- Detect invalid characters.
+- Handle ambiguous nucleotides.
+- Remove corrupted records.
+- Normalize sequence formats.
+- Handle duplicate records carefully.
+- Add minimum and maximum length thresholds.
+- Generate preprocessing logs.
+- Generate QC summary statistics.
+- Save cleaned output files.
+- Implement robust exception handling.
+- Use modular functions.
+- Add unit tests.
+DO NOT implement ORF prediction yet.
+PHASE 3 — ORF PREDICTION
+Most Important Biological Phase
+This phase determines:
+biological realism,
+coding-region accuracy,
+downstream annotation quality.
+Critical Requirements
+true 6-frame scanning,
+overlap resolution,
+nested ORF prevention,
+coordinate tracking,
+reverse complement handling.
+Phase 3 Prompt
+Build ONLY the ORF prediction module.
+Requirements:
+- Perform 6-frame translation.
+- Detect ORFs on forward and reverse strands.
+- Prevent nested ORF inflation.
+- Implement overlap resolution.
+- Store:
+  * ORF ID
+  * coordinates
+  * frame
+  * strand
+  * protein sequence
+- Support configurable minimum ORF length.
+- Use biologically valid logic.
+- Avoid duplicate ORFs.
+- Add testing using known viral genomes.
+DO NOT implement annotation yet.
+PHASE 4 — FUNCTIONAL ANNOTATION
+Goal
+Perform real biological sequence annotation.
+Important
+Use:
+BLAST,
+DIAMOND,
+Smith-Waterman.
+Do NOT:
+simulate E-values,
+fabricate similarity scores,
+use fake LCS logic.
+Phase 4 Prompt
+Build ONLY the annotation module.
+Requirements:
+- Use real biological alignment methods.
+- Replace fake LCS logic with:
+  * BLAST
+  * DIAMOND
+  * Smith-Waterman
+- Use BLOSUM62 scoring.
+- Calculate:
+  * E-values
+  * percent identity
+  * coverage
+  * alignment score
+- Support local database search.
+- Support optional remote API search.
+- Save annotation tables.
+- Implement confidence filtering.
+- Use realistic viral reference datasets.
+DO NOT implement pathway enrichment yet.
+PHASE 5 — PATHWAY & DOMAIN MAPPING
+Goal
+Map proteins to real biological pathways and conserved domains.
+Integrations
+KEGG
+Reactome
+Pfam
+HMMER
+Important
+Avoid:
+static mappings,
+hardcoded pathways,
+fake enrichment logic.
+PHASE 6 — STATISTICAL ANALYSIS
+Goal
+Implement scientifically valid enrichment analysis.
+Required Methods
+Hypergeometric test
+Fisher exact test
+Benjamini–Hochberg FDR correction
+Important
+Never fabricate:
+p-values,
+background sizes,
+success counts.
+PHASE 7 — VISUALIZATION
+Generate
+pathway barplots,
+enrichment plots,
+volcano plots,
+ORF distributions,
+network graphs.
+Use:
+matplotlib,
+plotly,
+networkx.
+PHASE 8 — AI INTERPRETATION
+AI Restrictions
+AI must:
+explain computed results,
+summarize pathways,
+generate readable narratives.
+AI must NOT:
+invent biological mechanisms,
+generate pathways,
+fabricate findings.
+PHASE 9 — REPORT GENERATION
+Generate
+CSV reports,
+HTML reports,
+PDF reports.
+Include:
+preprocessing summaries,
+ORF results,
+annotation results,
+pathway enrichment,
+statistical thresholds,
+runtime information,
+reproducibility metadata.
+PHASE 10 — STREAMLIT DASHBOARD
+Dashboard Features
+FASTA/FASTQ upload
+Interactive pipeline execution
+QC display
+Annotation tables
+Visualizations
+AI summaries
+Download buttons
+Runtime logs
+12. Critical Scientific Validation Checklist
+After every phase, ask:
+Are biological assumptions valid?
+Are ORFs duplicated?
+Are E-values real?
+Are pathways dynamically retrieved?
+Are thresholds configurable?
+Are outputs reproducible?
+Is AI separated from deterministic biology?
+13. Anti-Hallucination Rules
+Never allow:
+fake p-values,
+fake enrichment,
+fabricated E-values,
+fake pathways,
+arbitrary statistics,
+unsupported biological claims.
+Always verify:
+database sources,
+alignment methods,
+ORF overlap handling,
+background universe sizes,
+enrichment assumptions.
+14. Testing Strategy
+Preprocessing Tests
+invalid FASTA,
+empty sequences,
+ambiguous nucleotides,
+duplicate entries.
+ORF Tests
+overlaps,
+strand correctness,
+coordinate accuracy.
+Annotation Tests
+realistic E-values,
+realistic identity scores,
+proper coverage calculations.
+Statistical Tests
+correct FDR implementation,
+no duplicate inflation,
+proper enrichment assumptions.
+Report Tests
+embedded figures,
+valid exports,
+reproducibility.
+15. Final Viva Preparation
+Be prepared to explain:
+Why was this ORF strategy selected?
+How are overlapping ORFs handled?
+How are E-values calculated?
+How is FDR correction implemented?
+How are pathways retrieved?
+What databases are integrated?
+How is reproducibility maintained?
+What are the limitations?
+How is AI prevented from hallucinating biology?
+16. Final Scientific Advice
+Your project becomes scientifically defensible only if:
+ORF prediction is biologically valid,
+statistics are real,
+annotation uses true alignment tools,
+pathway mapping is dynamic,
+enrichment analysis is correct,
+AI remains interpretation-only.
+A smaller but scientifically rigorous pipeline is significantly better than:
+a huge fake platform,
+fabricated enrichment,
+unrealistic dashboards,
+AI-generated biology.
+In genomics research, professors care far more about:
+scientific reasoning,
+reproducibility,
+biological validity,
+computational defensibility,than flashy interfaces or oversized claims.

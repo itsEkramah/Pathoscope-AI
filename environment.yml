@@ -1,0 +1,29 @@
+name: pathoscope-ai
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - bioconda::blast=2.14.1
+  - bioconda::diamond=2.1.8
+  - bioconda::hmmer=3.3.2
+  - conda-forge::weasyprint=61.2
+  - conda-forge::pydantic=2.6.4
+  - conda-forge::biopython=1.83
+  - conda-forge::pandas=2.2.1
+  - conda-forge::numpy=1.26.4
+  - conda-forge::scipy=1.12.0
+  - conda-forge::matplotlib=3.8.3
+  - conda-forge::seaborn=0.13.2
+  - conda-forge::networkx=3.2.1
+  - conda-forge::jinja2=3.1.3
+  - conda-forge::pyyaml=6.0.1
+  - conda-forge::requests=2.31.0
+  - conda-forge::loguru=0.7.2
+  - conda-forge::pytest=8.1.1
+  - conda-forge::instructor=0.5.2
+  - pip:
+    - openai>=1.14.0
+    - streamlit>=1.30.0
+

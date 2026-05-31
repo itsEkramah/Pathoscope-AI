@@ -1,0 +1,4 @@
+sequence_id,length,gc_percent,ambiguous_count,ambiguous_percent,status,rejection_reason,duplicate_type
+seq_duplicate_1,120,50.0,0,0.0,ACCEPTED,,None
+seq_duplicate_2,120,50.0,0,0.0,ACCEPTED,,Duplicate Sequence Content
+seq_duplicate_3,120,50.0,0,0.0,ACCEPTED,,Duplicate Sequence Content

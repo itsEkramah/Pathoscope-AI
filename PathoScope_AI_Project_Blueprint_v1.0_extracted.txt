@@ -1,0 +1,3306 @@
+PRODUCT REQUIREMENTS DOCUMENT (PRD)
+Project Name
+PathoScope AI
+Full Title
+PathoScope AI: An Automated Viral Functional Genomics Pipeline for Sequence Annotation, Pathway Mapping, and AI-Assisted Biological Interpretation
+
+1. Project Overview
+PathoScope AI is an automated Functional Genomics pipeline designed to process raw viral genomic datasets and generate biologically meaningful interpretations through computational analysis.
+The system accepts raw biological sequence files and automatically performs preprocessing, quality control, ORF prediction, sequence annotation, pathway mapping, statistical filtering, visualization generation, and AI-assisted biological interpretation.
+The entire workflow must be automated and reproducible with minimal manual intervention.
+The project is intended as an academic-scale implementation of a modern bioinformatics workflow used in viral genomics and functional genomics research.
+
+2. Problem Statement
+Current viral genomics analysis requires multiple independent tools and manual execution of different analytical steps.
+Researchers often need to:
+Clean raw sequence data
+Validate sequence quality
+Predict coding regions
+Perform sequence annotation
+Retrieve pathway information
+Conduct statistical enrichment analysis
+Generate biological reports
+These steps are fragmented and time-consuming.
+There is a need for a unified automated pipeline capable of processing raw biological files and generating publication-style biological reports automatically.
+
+3. Target Users
+Primary Users
+Bioinformatics students
+Functional genomics researchers
+Computational biologists
+Academic laboratories
+Secondary Users
+Virology researchers
+Genomics educators
+Research supervisors
+Biotechnology students
+
+4. Core Vision
+The user should be able to upload a raw biological file and receive a complete biological analysis report without manually running multiple tools.
+Expected workflow:
+Raw Input File
+↓
+Automatic Preprocessing
+↓
+ORF Prediction
+↓
+Functional Annotation
+↓
+Pathway Mapping
+↓
+Statistical Analysis
+↓
+Visualization
+↓
+AI Interpretation
+↓
+Report Generation
+
+5. Supported Input Types
+Primary Inputs
+FASTA
+Examples:
+Viral genomes
+Viral contigs
+Viral assemblies
+FASTQ
+Examples:
+Raw sequencing reads
+NGS datasets
+Annotation Files
+Examples:
+GFF
+GTF
+GenBank
+Metadata Files
+Examples:
+CSV
+TSV
+TXT
+
+6. Core Features
+Feature 1
+Raw Data Upload
+User uploads:
+FASTA
+FASTQ
+GFF
+GenBank
+System automatically recognizes file type.
+
+Feature 2
+Automated Quality Control
+System performs:
+File validation
+Format validation
+Sequence validation
+Missing data detection
+Duplicate detection
+Invalid nucleotide detection
+Length filtering
+Outputs:
+QC Report
+
+Feature 3
+Sequence Normalization
+System performs:
+Uppercase conversion
+Sequence cleaning
+Ambiguous nucleotide analysis
+Standardized formatting
+Outputs:
+Normalized sequence file
+
+Feature 4
+ORF Prediction
+System performs:
+Six-frame translation
+Start codon detection
+Stop codon detection
+ORF extraction
+Overlap resolution
+Outputs:
+Predicted proteins
+
+Feature 5
+Protein Translation
+System converts:
+DNA
+↓
+Protein Sequences
+Outputs:
+Protein FASTA
+
+Feature 6
+Functional Annotation
+System performs:
+Sequence similarity search
+Identity calculation
+Coverage calculation
+E-value filtering
+Outputs:
+Annotated proteins
+
+Feature 7
+Protein Domain Detection
+Databases:
+Pfam
+InterPro
+Conserved Domains
+Outputs:
+Detected domains
+
+Feature 8
+Pathway Mapping
+Databases:
+KEGG
+Reactome
+WikiPathways
+Outputs:
+Mapped pathways
+
+Feature 9
+Statistical Analysis
+System performs:
+Hypergeometric enrichment
+Fisher exact test
+Benjamini-Hochberg FDR correction
+Pathway ranking
+Thresholds:
+P-value < 0.05
+FDR < 0.05
+Outputs:
+Significant pathways
+
+Feature 10
+Visualization
+Generate:
+Enrichment barplots
+Volcano plots
+Pathway bubble plots
+Network graphs
+Annotation summaries
+Outputs:
+PNGSVGHTML
+
+Feature 11
+AI-Assisted Interpretation
+System sends validated biological results to Gemini API.
+AI explains:
+Protein functions
+Biological pathways
+Domain significance
+Viral mechanisms
+Important:
+AI does NOT generate statistics.
+AI only interprets validated results.
+
+Feature 12
+Automated Report Generation
+Generate:
+PDF Report
+HTML Report
+CSV Tables
+JSON Results
+
+7. User Stories
+User Story 1
+As a researcher,
+I want to upload a FASTA file,
+so that the entire analysis is performed automatically.
+
+User Story 2
+As a student,
+I want biological pathways identified automatically,
+so that I can understand gene functions.
+
+User Story 3
+As a supervisor,
+I want reproducible reports,
+so that results can be validated.
+
+User Story 4
+As a genomics researcher,
+I want statistical significance testing,
+so that enriched pathways can be trusted.
+
+8. Success Criteria
+The project is successful if:
+Raw files are accepted
+Entire pipeline runs automatically
+No manual intervention required
+Annotation is biologically meaningful
+Pathways are correctly mapped
+FDR correction works correctly
+Reports are generated automatically
+AI explanations match computed results
+
+9. Functional Requirements
+The system SHALL:
+Accept raw biological files
+Perform preprocessing automatically
+Predict ORFs
+Translate proteins
+Annotate proteins
+Detect domains
+Retrieve pathways
+Calculate enrichment statistics
+Generate figures
+Generate reports
+Generate AI summaries
+
+10. Non-Functional Requirements
+The system SHALL:
+Be modular
+Be reproducible
+Be scalable
+Be configurable
+Be platform independent
+
+11. Constraints
+Project must be:
+Python based
+Modular architecture
+Automated pipeline
+Suitable for Functional Genomics course
+Runnable on standard laptops
+Demonstrable during viva
+
+12. Out of Scope (Version 1)
+Not included:
+Full RNA-seq alignment
+Whole transcriptome assembly
+Single-cell sequencing
+Large HPC clusters
+Cloud deployment
+Clinical diagnostics
+
+13. Expected Deliverables
+Complete Python pipeline
+Source code
+Documentation
+User manual
+Sample datasets
+Generated reports
+Presentation slides
+Viva preparation material
+
+14. Final Product Vision
+A user uploads a raw viral genomic file.
+The system automatically:
+Performs QC
+Cleans data
+Predicts ORFs
+Translates proteins
+Annotates proteins
+Detects domains
+Maps pathways
+Performs statistics
+Creates visualizations
+Generates AI interpretations
+Produces publication-style reports
+without requiring manual execution of individual bioinformatics tools.
+
+
+TECHNICAL REQUIREMENTS DOCUMENT (TRD)
+Project Name
+PathoScope AI
+Full Title
+PathoScope AI: An Automated Viral Functional Genomics Pipeline for Sequence Annotation, Pathway Mapping, and AI-Assisted Biological Interpretation
+
+1. Technical Vision
+PathoScope AI shall be developed as a modular, reproducible, automated bioinformatics pipeline capable of accepting raw viral sequence files and producing biologically meaningful reports with minimal user intervention.
+The system must follow a deterministic computational workflow where all biological analysis is performed through code and AI is only used for interpretation of validated results.
+Core principle:
+Raw Data → Computational Analysis → Statistics → AI Interpretation
+NOT
+Raw Data → AI → Results
+
+2. System Architecture
+High-Level Architecture
+User Input
+↓
+Preprocessing Module
+↓
+ORF Prediction Module
+↓
+Protein Translation Module
+↓
+Functional Annotation Module
+↓
+Domain Detection Module
+↓
+Pathway Mapping Module
+↓
+Statistical Analysis Module
+↓
+Visualization Module
+↓
+AI Interpretation Module
+↓
+Report Generation Module
+↓
+Final Outputs
+
+3. Technology Stack
+Programming Language
+Python 3.11+
+Reason:
+Large bioinformatics ecosystem
+Biopython support
+Scientific computing libraries
+API integration capabilities
+
+Core Bioinformatics Libraries
+Biopython
+Used For:
+FASTA parsing
+FASTQ parsing
+Sequence manipulation
+Translation
+Reverse complement generation
+
+Pandas
+Used For:
+DataFrames
+Annotation tables
+Statistical tables
+Report data
+
+NumPy
+Used For:
+Numerical calculations
+Matrix operations
+Statistical calculations
+
+Statistical Libraries
+SciPy
+Used For:
+Hypergeometric tests
+Fisher Exact Test
+Statistical significance
+
+Statsmodels
+Used For:
+Benjamini-Hochberg FDR correction
+Multiple testing correction
+
+Visualization Libraries
+Matplotlib
+Used For:
+Static figures
+Publication-quality plots
+
+Plotly
+Used For:
+Interactive visualization
+
+NetworkX
+Used For:
+Protein-pathway networks
+Functional interaction graphs
+
+AI Layer
+Gemini API
+Used ONLY for:
+Biological summaries
+Functional explanations
+Pathway interpretation
+Must NOT:
+Calculate statistics
+Generate pathways
+Predict ORFs
+
+4. Database Strategy
+Professor Requirement:
+Pipeline must integrate biological databases automatically.
+
+Database 1
+NCBI
+Purpose:
+Genome retrieval
+Metadata retrieval
+Access Method:
+NCBI Entrez API
+
+Database 2
+KEGG
+Purpose:
+Pathway mapping
+Access Method:
+KEGG REST API
+
+Database 3
+Reactome
+Purpose:
+Biological pathway mapping
+Access Method:
+Reactome API
+
+Database 4
+Pfam
+Purpose:
+Protein domains
+Access Method:
+Pfam API / downloaded database
+
+Database 5
+HGNC
+Purpose:
+Gene ID normalization
+Example:
+ENSG00000141510
+↓
+TP53
+Access Method:
+HGNC API
+
+5. Project Directory Structure
+project_root/
+├── app/
+├── config/
+├── preprocessing/
+├── qc/
+├── orf_prediction/
+├── translation/
+├── annotation/
+├── domains/
+├── pathway_mapping/
+├── statistics/
+├── visualization/
+├── ai_summary/
+├── reporting/
+├── database_clients/
+├── tests/
+├── outputs/
+├── logs/
+├── sample_data/
+├── docs/
+├── requirements.txt
+├── config.yaml
+└── run_pipeline.py
+
+6. Module Responsibilities
+Module 1
+Input Handler
+Purpose:
+Accept raw files.
+Supported Formats:
+FASTA
+FASTQ
+CSV
+TXT
+GFF
+GTF
+GenBank
+Responsibilities:
+Detect file type
+Validate file
+Route to correct parser
+
+Module 2
+Quality Control
+Responsibilities:
+Empty file detection
+Invalid sequence detection
+Duplicate detection
+Length distribution analysis
+Ambiguous nucleotide analysis
+Outputs:
+qc_report.json
+
+Module 3
+Preprocessing
+Responsibilities:
+Remove duplicates
+Normalize sequences
+Clean invalid characters
+Handle missing data
+Outputs:
+cleaned_sequences.fasta
+
+Module 4
+ORF Prediction
+Responsibilities:
+Six-frame scanning
+Start codon detection
+Stop codon detection
+ORF extraction
+Overlap resolution
+Critical Requirement:
+Nested ORFs must be filtered.
+No duplicate ORFs allowed.
+Outputs:
+predicted_orfs.fasta
+
+Module 5
+Translation
+Responsibilities:
+DNA
+↓
+Protein
+Outputs:
+proteins.fasta
+
+Module 6
+Annotation
+Responsibilities:
+Similarity search
+Identity calculation
+Coverage calculation
+E-value calculation
+Preferred Tools:
+DIAMOND
+BLAST
+Outputs:
+annotations.csv
+
+Module 7
+Domain Detection
+Responsibilities:
+Pfam lookup
+Conserved domain lookup
+Outputs:
+domains.csv
+
+Module 8
+Pathway Mapping
+Responsibilities:
+KEGG mapping
+Reactome mapping
+Pathway aggregation
+Outputs:
+pathways.csv
+
+Module 9
+Statistical Analysis
+Responsibilities:
+Hypergeometric test
+Fisher exact test
+Benjamini-Hochberg correction
+Outputs:
+enrichment_results.csv
+
+Module 10
+Visualization
+Generate:
+Bar plots
+Bubble plots
+Volcano plots
+Network diagrams
+Outputs:
+PNG
+SVG
+HTML
+
+Module 11
+AI Interpretation
+Input:
+Validated analysis results
+Output:
+Human-readable biological report
+
+Module 12
+Report Generator
+Generate:
+PDF
+HTML
+CSV summary
+
+7. Configuration Management
+All thresholds must be stored in config.yaml
+Never hardcode thresholds inside modules.
+Example:
+min_orf_length: 300
+identity_threshold: 30
+coverage_threshold: 70
+evalue_threshold: 1e-5
+pvalue_threshold: 0.05
+fdr_threshold: 0.05
+max_ambiguous_percentage: 5
+
+8. Logging Strategy
+All modules must write logs.
+logs/
+├── preprocessing.log
+├── annotation.log
+├── pathway.log
+├── statistics.log
+└── pipeline.log
+Logs must record:
+Errors
+Warnings
+Runtime
+Skipped records
+Failed API calls
+
+9. API Requirements
+HGNC API
+Purpose:
+Gene normalization
+
+KEGG REST API
+Purpose:
+Pathway retrieval
+
+Reactome API
+Purpose:
+Pathway retrieval
+
+Gemini API
+Purpose:
+AI interpretation
+
+10. Security Requirements
+Store API keys in:
+.env
+Never hardcode keys.
+
+11. Performance Requirements
+Pipeline must process:
+Small Viral Genome
+< 1 minute
+Medium Dataset
+< 5 minutes
+Classroom Demonstration Dataset
+< 10 minutes
+
+12. Testing Requirements
+Each module must have unit tests.
+Examples:
+test_preprocessing.py
+test_orf_prediction.py
+test_annotation.py
+test_statistics.py
+
+13. Automation Requirement
+Professor's most important requirement:
+Pipeline must run automatically.
+User should execute:
+python run_pipeline.py input.fasta
+System automatically performs:
+QC
+↓
+Normalization
+↓
+ORF Prediction
+↓
+Translation
+↓
+Annotation
+↓
+Domain Detection
+↓
+Pathway Mapping
+↓
+Statistics
+↓
+Visualization
+↓
+AI Interpretation
+↓
+Report Generation
+No manual execution of intermediate tools allowed.
+
+14. Deliverables
+Source Code
+Configuration Files
+Sample Dataset
+Reports
+Documentation
+Presentation
+User Manual
+Testing Suite
+Logs
+Outputs
+
+15. Scientific Validation Rules
+The pipeline MUST NOT:
+❌ Generate fake E-values
+❌ Generate fake p-values
+❌ Use AI for statistics
+❌ Use hardcoded biological results
+❌ Double-count overlapping ORFs
+❌ Use mock enrichment results
+The pipeline MUST:
+✅ Use real statistical calculations
+✅ Use reproducible thresholds
+✅ Use deterministic bioinformatics methods
+✅ Keep AI restricted to interpretation only
+
+
+
+
+APP FLOW DOCUMENT
+Project Name
+PathoScope AI
+Full Title
+PathoScope AI: An Automated Viral Functional Genomics Pipeline for Sequence Annotation, Pathway Mapping, and AI-Assisted Biological Interpretation
+
+1. Purpose of This Document
+This document defines the complete user journey, application workflow, screen structure, navigation logic, button behavior, processing states, success states, error states, and report generation flow.
+This document should be detailed enough that an AI coding agent can build the complete application without guessing how users interact with the system.
+
+2. User Journey Overview
+The user journey should be extremely simple:
+User Opens Application
+↓
+Uploads Raw Biological File
+↓
+Configures Analysis Parameters
+↓
+Starts Pipeline
+↓
+Monitors Progress
+↓
+Views Results Dashboard
+↓
+Views AI Interpretation
+↓
+Downloads Reports
+↓
+Exits Application
+
+3. Application Navigation Structure
+Main Navigation
+Home
+↓
+Upload Dataset
+↓
+Pipeline Execution
+↓
+Results Dashboard
+↓
+Visualizations
+↓
+AI Biological Interpretation
+↓
+Reports & Downloads
+↓
+Logs & Diagnostics
+
+4. Screen 1 — Landing Page
+Purpose:
+Introduce the project and explain functionality.
+
+Components
+Project Logo
+Project Name
+PathoScope AI
+Project Description
+Upload Button
+Documentation Button
+Sample Dataset Button
+Start Analysis Button
+
+Displayed Information
+Supported Input Types:
+FASTA
+FASTQ
+CSV
+TXT
+GFF
+GTF
+GenBank
+Supported Databases:
+NCBI
+KEGG
+Reactome
+Pfam
+HGNC
+Generated Outputs:
+Annotation Reports
+Pathway Analysis
+Visualizations
+AI Summaries
+PDF Reports
+
+Buttons
+Start Analysis
+Action:
+Navigate to Upload Screen
+
+Documentation
+Action:
+Open User Guide
+
+Download Sample Dataset
+Action:
+Download Example Viral Genome
+
+5. Screen 2 — Dataset Upload
+Purpose
+Accept raw biological data.
+
+Upload Methods
+Drag and Drop
+Browse File
+Example Dataset
+
+Accepted Formats
+FASTA
+FASTQ
+CSV
+TXT
+GFF
+GTF
+GBK
+GenBank
+
+Displayed Information
+File Name
+File Size
+Detected Format
+Number of Sequences
+
+Validation Checks
+File Exists
+File Not Empty
+Supported Format
+Valid Characters
+Valid Structure
+
+Success State
+Green Notification
+File Uploaded Successfully
+
+Error State
+Red Notification
+Invalid File Format
+
+6. Screen 3 — Pipeline Configuration
+Purpose
+Allow users to modify analysis parameters.
+
+Section A
+Preprocessing Parameters
+Fields
+Maximum Ambiguous Percentage
+Default:
+5%
+Minimum Sequence Length
+Default:
+200
+Maximum Sequence Length
+Default:
+50000
+Duplicate Removal
+Default:
+Enabled
+
+Section B
+ORF Prediction Parameters
+Minimum ORF Length
+Default:
+300 bp
+Start Codons
+Default:
+ATG
+Optional:
+GTG
+TTG
+Stop Codons
+Default:
+TAA
+TAG
+TGA
+
+Section C
+Annotation Parameters
+Identity Threshold
+Default:
+30%
+Coverage Threshold
+Default:
+70%
+E-value Threshold
+Default:
+1e-5
+
+Section D
+Pathway Parameters
+Enable KEGG
+Enable Reactome
+Enable Pfam
+
+Section E
+Statistics Parameters
+P-value Threshold
+Default:
+0.05
+FDR Threshold
+Default:
+0.05
+
+Section F
+AI Interpretation
+Enable AI Summary
+Select Model
+Gemini
+
+Buttons
+Save Settings
+Reset Defaults
+Start Pipeline
+
+7. Screen 4 — Pipeline Execution
+Purpose
+Display real-time progress.
+
+Pipeline Tracker
+Stage 1
+Quality Control
+Status:
+Pending
+Running
+Completed
+Failed
+
+Stage 2
+Preprocessing
+
+Stage 3
+ORF Prediction
+
+Stage 4
+Protein Translation
+
+Stage 5
+Annotation
+
+Stage 6
+Domain Detection
+
+Stage 7
+Pathway Mapping
+
+Stage 8
+Statistics
+
+Stage 9
+Visualization
+
+Stage 10
+AI Interpretation
+
+Stage 11
+Report Generation
+
+Progress Bar
+0%
+↓
+100%
+
+Runtime Counter
+Elapsed Time
+Estimated Remaining Time
+
+8. Error Handling Screen
+Purpose
+Display errors gracefully.
+
+Examples
+API Failure
+KEGG Unavailable
+Suggested Action
+Retry
+
+Invalid FASTA
+Suggested Action
+Upload Correct File
+
+Annotation Failure
+Suggested Action
+Check Reference Database
+
+Buttons
+Retry Stage
+Restart Pipeline
+Download Error Logs
+
+9. Results Dashboard
+Purpose
+Display complete biological analysis.
+
+Summary Cards
+Total Sequences
+Valid Sequences
+Predicted ORFs
+Annotated Proteins
+Mapped Pathways
+Significant Pathways
+Generated Reports
+
+Pipeline Statistics
+Execution Time
+API Calls
+Success Rate
+Failed Records
+
+10. ORF Analysis Page
+Purpose
+Display ORF prediction results.
+
+Metrics
+Total ORFs
+Forward Strand ORFs
+Reverse Strand ORFs
+Average Length
+Longest ORF
+
+Table
+ORF ID
+Start
+End
+Frame
+Length
+Strand
+Protein Length
+
+Search Function
+Search ORF
+Filter by Length
+Filter by Frame
+
+11. Annotation Results Page
+Purpose
+Display annotation results.
+
+Metrics
+Annotated Proteins
+Unknown Proteins
+Average Identity
+Average Coverage
+
+Table
+Protein ID
+Best Match
+Identity
+Coverage
+E-value
+Function
+Confidence
+
+Export Options
+CSV
+Excel
+JSON
+
+12. Domain Analysis Page
+Purpose
+Display domain predictions.
+
+Metrics
+Domains Identified
+Most Frequent Domain
+Unique Domains
+
+Table
+Protein
+Domain
+Pfam ID
+Description
+Confidence
+
+13. Pathway Analysis Page
+Purpose
+Display mapped pathways.
+
+Metrics
+Total Pathways
+Significant Pathways
+Enriched Pathways
+
+Table
+Pathway
+Database
+Genes
+P-value
+FDR
+Significance
+
+Filtering
+Sort by P-value
+Sort by FDR
+Sort by Gene Count
+
+14. Visualization Dashboard
+Purpose
+Display graphical outputs.
+
+Visualization 1
+Pathway Enrichment Barplot
+
+Visualization 2
+Bubble Plot
+
+Visualization 3
+Protein-Pathway Network
+
+Visualization 4
+Annotation Distribution Pie Chart
+
+Visualization 5
+ORF Length Distribution
+
+Buttons
+Download PNG
+Download SVG
+Download PDF
+
+15. AI Interpretation Page
+Purpose
+Provide human-readable biological explanation.
+
+Sections
+Project Summary
+Predicted Proteins
+Functional Annotation Summary
+Domain Interpretation
+Pathway Interpretation
+Biological Significance
+Research Implications
+Potential Limitations
+
+Important Rule
+AI can explain:
+✓ Annotation
+✓ Domains
+✓ Pathways
+✓ Biological significance
+AI cannot generate:
+✗ Statistics
+✗ P-values
+✗ FDR
+✗ ORFs
+
+16. Report Download Page
+Purpose
+Provide final outputs.
+
+Available Files
+PDF Report
+HTML Report
+CSV Results
+JSON Results
+Visualization Package
+Log Files
+
+Buttons
+Download PDF
+Download HTML
+Download CSV
+Download All
+
+17. Logs & Diagnostics Page
+Purpose
+Allow debugging.
+
+Displayed Logs
+Preprocessing Log
+Annotation Log
+Pathway Log
+Statistics Log
+Pipeline Log
+
+Metrics
+Warnings
+Errors
+Skipped Records
+API Failures
+Runtime
+
+18. Empty States
+Case 1
+No File Uploaded
+Message:
+Upload a file to begin analysis.
+
+Case 2
+No Significant Pathways
+Message:
+No pathways passed significance thresholds.
+
+Case 3
+No Domains Found
+Message:
+No domains detected above confidence threshold.
+
+19. Success States
+Pipeline Completed Successfully
+Message:
+Analysis completed successfully.
+Reports generated.
+
+Report Download Complete
+Message:
+Files downloaded successfully.
+
+20. Demo/Viva Flow
+Professor uploads:
+viral_genome.fasta
+↓
+Pipeline starts
+↓
+QC Report Generated
+↓
+ORFs Predicted
+↓
+Proteins Annotated
+↓
+Pathways Mapped
+↓
+Statistics Calculated
+↓
+Visualizations Generated
+↓
+AI Interpretation Produced
+↓
+PDF Report Downloaded
+Entire workflow demonstrated without manual intervention.
+
+21. Final App Flow
+Landing Page
+↓
+Upload Dataset
+↓
+Configure Parameters
+↓
+Run Pipeline
+↓
+Monitor Progress
+↓
+View Results
+↓
+Explore Visualizations
+↓
+Read AI Interpretation
+↓
+Download Reports
+↓
+View Logs
+↓
+Exit Application
+
+
+
+
+DOCUMENT 4: UI/UX DESIGN BRIEF
+Project: PathoScope AI – Automated Viral Functional Genomics Pipeline
+
+1. Design Vision
+PathoScope AI should look like a professional bioinformatics platform used in research institutes, pharmaceutical companies, genomics laboratories, and academic research centers.
+The interface must feel like:
+Galaxy Platform
+GenePattern
+CLC Genomics Workbench
+Benchling
+BaseSpace
+ViralQuest
+combined with modern SaaS dashboard aesthetics.
+The UI should communicate:
+Scientific credibility
+Automation
+Reproducibility
+Research-grade analytics
+Functional genomics expertise
+
+2. Target Users
+Primary Users
+Bioinformatics students
+Functional genomics researchers
+Virologists
+Computational biologists
+Graduate students
+Research assistants
+University instructors
+
+Secondary Users
+Healthcare researchers
+Biotechnology companies
+Academic laboratories
+NGS analysts
+
+3. Design Style
+Overall Style
+Modern Scientific Dashboard
+Characteristics:
+Clean
+Minimal
+Professional
+Data-focused
+Research-oriented
+Interactive
+Responsive
+
+Avoid
+Gaming aesthetics
+Cartoon designs
+Excessive animations
+Bright flashy colors
+Social-media style layouts
+
+4. Color Palette
+Primary
+Deep Navy
+#0B1220
+
+Secondary
+Dark Blue
+#172554
+
+Accent
+Teal
+#14B8A6
+
+Success
+Green
+#22C55E
+
+Warning
+Amber
+#F59E0B
+
+Error
+Red
+#EF4444
+
+Background
+#F8FAFC
+
+Cards
+#FFFFFF
+
+Text
+Primary:
+#111827
+Secondary:
+#6B7280
+
+5. Typography
+Font Family
+Inter
+Fallback:
+Roboto
+Arial
+sans-serif
+
+Headings
+Bold
+600-700 weight
+
+Body
+400-500 weight
+
+Code Blocks
+JetBrains Mono
+or
+Fira Code
+
+6. Dashboard Layout
+
+Left Sidebar
+Contains:
+Home
+Upload Data
+Preprocessing
+ORF Prediction
+Annotation
+Pathway Mapping
+Statistics
+Visualizations
+AI Interpretation
+Reports
+Settings
+Logs
+
+Top Navigation
+Contains:
+Project Name
+Current Dataset
+Run Status
+User Settings
+Theme Toggle
+
+Main Workspace
+Dynamic content area
+Displays current module output
+
+7. Landing Page
+Displays:
+Project Overview
+Pipeline Workflow
+Supported Formats
+Recent Runs
+Pipeline Statistics
+
+Visual Workflow
+FASTA/FASTQ Upload
+↓
+Preprocessing
+↓
+QC
+↓
+Normalization
+↓
+ORF Detection
+↓
+Annotation
+↓
+Pathway Mapping
+↓
+Statistics
+↓
+Visualization
+↓
+AI Summary
+↓
+Report
+
+8. Upload Module
+Drag-and-drop area
+Supported formats:
+FASTA
+FASTQ
+CSV
+TXT
+GTF
+GFF
+TSV
+
+Display:
+File name
+File size
+Upload date
+Sequence count
+Status
+
+9. Preprocessing Page
+Show:
+Input sequences
+Removed duplicates
+Invalid sequences
+Ambiguous sequences
+Normalized records
+
+Charts:
+Sequence length histogram
+GC content distribution
+Quality score distribution
+
+10. Quality Control Page
+Display:
+Total Reads
+Passed Reads
+Failed Reads
+Average GC%
+Average Length
+N-content
+
+Charts:
+FastQC-like reports
+Quality per position
+GC plot
+Length distribution
+
+11. ORF Prediction Page
+Display:
+ORF Table
+Columns:
+ORF ID
+Start
+End
+Strand
+Frame
+Length
+Protein Length
+Status
+
+Genome Viewer
+Interactive visualization
+Highlight ORFs
+Zoom capability
+
+12. Functional Annotation Page
+Display:
+Protein annotations
+
+Columns:
+Protein
+Best Match
+Identity %
+Coverage %
+E-value
+Confidence
+Database
+
+Filters:
+Identity Threshold
+Coverage Threshold
+E-value Threshold
+
+Searchable Table
+
+13. Pathway Mapping Page
+Display:
+KEGG pathways
+Reactome pathways
+Pfam domains
+
+Each pathway card shows:
+Pathway Name
+Gene Count
+Enrichment Score
+FDR
+Associated Proteins
+
+14. Statistical Analysis Page
+Show:
+Total pathways
+Significant pathways
+Average enrichment
+FDR statistics
+
+Charts:
+Volcano Plot
+Bubble Plot
+Bar Plot
+Enrichment Plot
+Heatmap
+
+15. Visualization Module
+Contains:
+Network Graph
+Protein ↔ Pathway interactions
+Built with:
+NetworkX
+Plotly
+
+Heatmaps
+Expression-like matrix
+Annotation matrix
+
+Domain Distribution
+Pfam frequencies
+
+Pathway Distribution
+KEGG categories
+
+16. AI Interpretation Page
+Displays:
+Generated biological summary
+
+Sections:
+Genome Overview
+Predicted Proteins
+Functional Insights
+Pathway Analysis
+Potential Biological Significance
+Research Recommendations
+
+Important:
+AI must never generate statistics
+AI only interprets validated outputs
+
+17. Report Generation Page
+Export options:
+PDF
+HTML
+CSV
+JSON
+ZIP Package
+
+Preview report before download
+
+18. Logs Page
+Critical for professor evaluation
+Display:
+Timestamp
+Module
+Action
+Status
+Error
+Runtime
+
+Example:
+12:02:15
+Preprocessing
+Duplicate removal
+Success
+
+12:03:01
+ORF Prediction
+ORF_001 generated
+Success
+
+19. Error States
+Must show user-friendly messages
+Examples:
+Invalid FASTA
+Unsupported format
+No ORFs found
+Annotation failed
+Database unavailable
+API timeout
+
+20. Success States
+Examples:
+✔ Preprocessing Complete
+✔ ORF Prediction Complete
+✔ Annotation Complete
+✔ Report Generated
+
+21. Mobile Responsiveness
+Although primarily desktop-focused:
+Tables become collapsible
+Cards stack vertically
+Navigation becomes drawer
+Charts resize automatically
+
+22. Accessibility
+Support:
+Keyboard navigation
+Screen readers
+High contrast mode
+Colorblind-friendly charts
+
+23. Recommended Framework
+Frontend:
+Streamlit
+or
+Dash by Plotly
+
+Visualization:
+Plotly
+NetworkX
+Matplotlib
+
+24. Professor Demo Mode
+For viva presentation:
+One-click demo dataset
+Automatic execution
+Pre-generated reports
+Visual workflow animation
+Execution timing display
+Module-by-module explanation panel
+
+
+
+
+DOCUMENT 5 — BACKEND SCHEMA DOCUMENT (BSD)
+Project: PathoScope AI – Automated Viral Functional Genomics Pipeline
+
+1. PURPOSE
+This document defines the complete backend architecture, database schema, relationships, storage logic, permissions, audit tracking, and result management for PathoScope AI.
+The backend must support:
+Raw FASTA/FASTQ uploads
+Automated preprocessing
+ORF prediction
+Functional annotation
+KEGG/Reactome/Pfam mapping
+Statistical analysis
+AI interpretation
+Report generation
+Pipeline reproducibility
+Full audit trail
+
+2. DATABASE SELECTION
+Recommended
+SQLite (MVP)
+Reason:
+Lightweight
+Easy deployment
+No server needed
+
+Future Upgrade
+PostgreSQL
+Reason:
+Better scalability
+Concurrent users
+Enterprise ready
+
+3. DATABASE ARCHITECTURE
+Users
+│
+├── Projects
+│     │
+│     ├── Uploaded Files
+│     │
+│     ├── QC Results
+│     │
+│     ├── ORFs
+│     │
+│     ├── Annotations
+│     │
+│     ├── Pathways
+│     │
+│     ├── Statistics
+│     │
+│     ├── AI Interpretations
+│     │
+│     ├── Visualizations
+│     │
+│     └── Reports
+│
+└── Audit Logs
+
+4. USERS TABLE
+Table Name:
+users
+Purpose:
+Store researcher information
+
+Fields
+user_id
+INTEGER
+PRIMARY KEY
+
+name
+TEXT
+
+email
+TEXT
+
+institution
+TEXT
+
+role
+TEXT
+
+created_at
+TIMESTAMP
+
+Example
+1
+Muhammad Ekramah
+ekramah@example.com
+NCB QAU
+Researcher
+
+5. PROJECTS TABLE
+Each uploaded dataset becomes a project.
+projects
+Fields
+project_id
+INTEGER PRIMARY KEY
+
+user_id
+INTEGER
+
+project_name
+TEXT
+
+description
+TEXT
+
+status
+TEXT
+
+created_at
+TIMESTAMP
+
+Status
+Pending
+
+Running
+
+Completed
+
+Failed
+
+6. RAW FILES TABLE
+Stores uploaded FASTA/FASTQ files.
+raw_files
+Fields
+file_id
+INTEGER PRIMARY KEY
+
+project_id
+INTEGER
+
+filename
+TEXT
+
+file_type
+TEXT
+
+file_size
+INTEGER
+
+upload_date
+TIMESTAMP
+
+storage_path
+TEXT
+
+Supported Types
+FASTA
+
+FASTQ
+
+CSV
+
+TXT
+
+TSV
+
+GFF
+
+GTF
+
+7. PREPROCESSING RESULTS TABLE
+Stores preprocessing outputs.
+preprocessing_results
+Fields
+preprocess_id
+INTEGER PRIMARY KEY
+
+project_id
+INTEGER
+
+total_sequences
+INTEGER
+
+duplicates_removed
+INTEGER
+
+invalid_sequences
+INTEGER
+
+ambiguous_sequences
+INTEGER
+
+normalized_sequences
+INTEGER
+
+gc_content
+FLOAT
+
+average_length
+FLOAT
+
+processed_at
+TIMESTAMP
+
+8. QUALITY CONTROL TABLE
+Stores QC metrics.
+quality_control
+Fields
+qc_id
+INTEGER PRIMARY KEY
+
+project_id
+INTEGER
+
+total_reads
+INTEGER
+
+passed_reads
+INTEGER
+
+failed_reads
+INTEGER
+
+average_quality
+FLOAT
+
+gc_percentage
+FLOAT
+
+n_content
+FLOAT
+
+qc_status
+TEXT
+
+9. ORF TABLE
+Stores predicted ORFs.
+orfs
+Fields
+orf_id
+INTEGER PRIMARY KEY
+
+project_id
+INTEGER
+
+orf_name
+TEXT
+
+start_position
+INTEGER
+
+end_position
+INTEGER
+
+strand
+TEXT
+
+frame
+TEXT
+
+length_nt
+INTEGER
+
+length_aa
+INTEGER
+
+protein_sequence
+TEXT
+
+Example
+ORF_001
+
+120
+
+982
+
++
+
+Frame 1
+
+863 nt
+
+287 aa
+
+10. PROTEIN ANNOTATION TABLE
+Stores similarity search results.
+annotations
+Fields
+annotation_id
+INTEGER PRIMARY KEY
+
+orf_id
+INTEGER
+
+best_hit
+TEXT
+
+database_name
+TEXT
+
+identity_percentage
+FLOAT
+
+coverage_percentage
+FLOAT
+
+evalue
+FLOAT
+
+bit_score
+FLOAT
+
+confidence
+TEXT
+
+Confidence
+High
+
+Medium
+
+Low
+
+11. DOMAIN ANNOTATION TABLE
+Stores Pfam domains.
+domains
+Fields
+domain_id
+INTEGER PRIMARY KEY
+
+annotation_id
+INTEGER
+
+pfam_id
+TEXT
+
+domain_name
+TEXT
+
+domain_start
+INTEGER
+
+domain_end
+INTEGER
+
+evalue
+FLOAT
+
+Example
+PF01601
+
+Spike Glycoprotein Domain
+
+12. PATHWAY MAPPING TABLE
+Stores KEGG and Reactome mappings.
+pathways
+Fields
+pathway_id
+INTEGER PRIMARY KEY
+
+annotation_id
+INTEGER
+
+pathway_name
+TEXT
+
+pathway_source
+TEXT
+
+pathway_identifier
+TEXT
+
+Sources
+KEGG
+
+Reactome
+
+Custom
+
+13. ENRICHMENT ANALYSIS TABLE
+Stores statistical outputs.
+enrichment_results
+Fields
+enrichment_id
+INTEGER PRIMARY KEY
+
+project_id
+INTEGER
+
+pathway_name
+TEXT
+
+gene_count
+INTEGER
+
+background_count
+INTEGER
+
+pvalue
+FLOAT
+
+fdr
+FLOAT
+
+enrichment_score
+FLOAT
+
+significant
+BOOLEAN
+
+14. VISUALIZATION TABLE
+Stores generated figures.
+visualizations
+Fields
+visualization_id
+INTEGER PRIMARY KEY
+
+project_id
+INTEGER
+
+plot_name
+TEXT
+
+plot_type
+TEXT
+
+file_path
+TEXT
+
+generated_at
+TIMESTAMP
+
+Plot Types
+Bar Plot
+
+Bubble Plot
+
+Heatmap
+
+Volcano Plot
+
+Network Graph
+
+Pie Chart
+
+Histogram
+
+15. AI INTERPRETATION TABLE
+Stores AI-generated summaries.
+ai_interpretations
+Fields
+summary_id
+INTEGER PRIMARY KEY
+
+project_id
+INTEGER
+
+model_name
+TEXT
+
+prompt_version
+TEXT
+
+summary_text
+TEXT
+
+generated_at
+TIMESTAMP
+
+Important Rule
+AI outputs must never overwrite scientific outputs.
+AI only explains results.
+
+16. REPORTS TABLE
+Stores generated reports.
+reports
+Fields
+report_id
+INTEGER PRIMARY KEY
+
+project_id
+INTEGER
+
+report_type
+TEXT
+
+file_path
+TEXT
+
+generated_at
+TIMESTAMP
+
+Types
+PDF
+
+HTML
+
+CSV
+
+JSON
+
+ZIP
+
+17. AUDIT LOG TABLE
+Most important for professor evaluation.
+Stores every pipeline action.
+audit_logs
+Fields
+log_id
+INTEGER PRIMARY KEY
+
+project_id
+INTEGER
+
+module_name
+TEXT
+
+action
+TEXT
+
+status
+TEXT
+
+message
+TEXT
+
+timestamp
+TIMESTAMP
+
+Example
+Preprocessing
+
+Duplicate Removal
+
+Success
+
+15 duplicates removed
+
+18. ERROR LOG TABLE
+Stores failures.
+error_logs
+Fields
+error_id
+INTEGER PRIMARY KEY
+
+project_id
+INTEGER
+
+module_name
+TEXT
+
+error_type
+TEXT
+
+error_message
+TEXT
+
+timestamp
+TIMESTAMP
+
+19. CONFIGURATION TABLE
+Stores runtime thresholds.
+configurations
+Fields
+config_id
+INTEGER PRIMARY KEY
+
+parameter
+TEXT
+
+value
+TEXT
+
+Examples
+min_orf_length = 300
+
+identity_threshold = 30
+
+coverage_threshold = 70
+
+evalue_threshold = 1e-5
+
+fdr_threshold = 0.05
+
+20. RELATIONSHIP DIAGRAM
+Users
+│
+└── Projects
+        │
+        ├── Raw Files
+        ├── QC Results
+        ├── ORFs
+        ├── Annotations
+        ├── Domains
+        ├── Pathways
+        ├── Enrichment Results
+        ├── Visualizations
+        ├── AI Summaries
+        ├── Reports
+        ├── Audit Logs
+        └── Error Logs
+
+21. REPRODUCIBILITY REQUIREMENTS
+Every run must store:
+Input file
+Parameters used
+Thresholds
+Database versions
+Date
+Runtime
+Generated outputs
+AI prompt version
+This is critical for viva and scientific reproducibility.
+
+22. PROFESSOR REQUIREMENTS MAPPING
+Requirement
+Supported
+Raw FASTA Input
+✅
+FASTQ Input
+✅
+Automatic Processing
+✅
+QC Analysis
+✅
+Normalization
+✅
+ORF Prediction
+✅
+Annotation
+✅
+Pathway Mapping
+✅
+Statistical Filtering
+✅
+FDR Correction
+✅
+AI Interpretation
+✅
+PDF Reports
+✅
+HTML Reports
+✅
+Full Audit Trail
+✅
+
+
+
+DOCUMENT 6 — IMPLEMENTATION PLAN
+Project: PathoScope AI – Automated Viral Functional Genomics Pipeline
+
+1. PURPOSE
+This document defines the exact development roadmap for building PathoScope AI.
+This is the document you will give to Antigravity, Cursor, Claude, GPT, or any AI coding agent.
+The objective is:
+Build a scientifically defensible Functional Genomics pipeline phase-by-phase rather than generating a giant AI-produced codebase in one shot.
+
+2. DEVELOPMENT PHILOSOPHY
+Correct Workflow
+Raw Data
+    ↓
+Preprocessing
+    ↓
+Quality Control
+    ↓
+Normalization
+    ↓
+ORF Prediction
+    ↓
+Annotation
+    ↓
+Pathway Mapping
+    ↓
+Statistical Analysis
+    ↓
+Visualization
+    ↓
+AI Interpretation
+    ↓
+Report Generation
+
+
+WRONG Workflow
+AI
+ ↓
+Fake Biology
+ ↓
+Fake Statistics
+ ↓
+Fake Report
+
+
+Professor will care about:
+Scientific validity
+Automation
+Reproducibility
+Pipeline design
+Modular architecture
+Not flashy UI.
+
+PHASE 0 — PROJECT PLANNING
+Goal
+Create complete software architecture.
+NO coding.
+NO implementation.
+Only planning.
+
+Deliverables
+Folder Structure
+PathoScope_AI/
+
+├── app/
+├── preprocessing/
+├── qc/
+├── normalization/
+├── orf_prediction/
+├── annotation/
+├── pathway_mapping/
+├── statistics/
+├── visualization/
+├── ai_interpretation/
+├── reporting/
+├── database/
+├── config/
+├── tests/
+├── outputs/
+├── logs/
+├── data/
+├── docs/
+└── run_pipeline.py
+
+
+Create
+System architecture
+Module responsibilities
+Execution flow
+Config strategy
+Database design
+Logging strategy
+Error handling strategy
+
+Success Criteria
+Architecture reviewed and approved.
+
+PHASE 1 — INPUT DATA HANDLING
+Goal
+Accept raw biological files.
+Professor explicitly requested:
+Raw file → automatic processing
+
+Supported Inputs
+FASTA
+virus.fasta
+
+
+FASTQ
+virus.fastq
+
+
+CSV
+gene_expression.csv
+
+
+TXT
+genes.txt
+
+
+TSV
+expression.tsv
+
+
+GFF/GTF
+Annotation files
+
+Implementation
+Use:
+Biopython
+for sequence parsing.
+
+Required Functions
+load_fasta()
+
+load_fastq()
+
+load_csv()
+
+load_tsv()
+
+load_gff()
+
+validate_file()
+
+
+Testing
+Test valid FASTA
+Test corrupted FASTA
+Test empty file
+Test unsupported file
+
+Success Criteria
+All file types imported automatically.
+
+PHASE 2 — PREPROCESSING
+Goal
+Clean raw biological data.
+
+Requirements
+Professor emphasized:
+Normalization
+Duplicate removal
+Missing data handling
+
+Tasks
+Duplicate Detection
+Remove exact duplicates.
+Store removed records.
+
+Invalid Characters
+Detect:
+XYZ
+123
+Special Characters
+
+
+Missing Values
+Remove:
+NA
+NULL
+Blank entries
+
+
+Ambiguous Bases
+Detect:
+N
+R
+Y
+K
+M
+
+Apply threshold.
+
+Sequence Length Filtering
+Remove extremely short sequences.
+Example:
+< 100 bp
+
+
+Output
+cleaned_sequences.fasta
+
+
+Testing
+Valid FASTA
+Corrupted FASTA
+Duplicate sequences
+Ambiguous sequences
+
+Success Criteria
+All preprocessing automated.
+
+PHASE 3 — QUALITY CONTROL
+Goal
+Generate FastQC-like metrics.
+
+Required Metrics
+Read count
+GC content
+N content
+Sequence length
+Quality score
+
+FASTQ Metrics
+Mean Q score
+Per-base quality
+Read quality distribution
+
+Outputs
+qc_report.html
+qc_summary.csv
+
+
+Visualizations
+GC plot
+Length histogram
+Quality histogram
+
+Success Criteria
+QC report generated automatically.
+
+PHASE 4 — NORMALIZATION
+Goal
+Professor specifically requested normalization.
+
+For Gene Lists
+Normalize IDs.
+Examples:
+TP53
+ENSG00000141510
+7157
+
+Convert to standardized symbols.
+
+Use
+HGNC
+for gene symbol normalization.
+
+For Count Data
+Support:
+CPM
+TPM
+RPKM
+
+Outputs
+normalized_data.csv
+
+
+Success Criteria
+Gene IDs standardized.
+
+PHASE 5 — ORF PREDICTION
+Goal
+Identify coding regions.
+
+Requirements
+Six-frame translation.
+Forward strands:
++1
++2
++3
+
+Reverse strands:
+-1
+-2
+-3
+
+Use
+Biopython
+
+Critical Requirement
+Fix the issue identified in audit:
+NO NESTED ORF DUPLICATION
+If multiple ORFs overlap:
+Keep:
+Longest ORF
+or
+Best annotated ORF
+
+Output
+predicted_orfs.fasta
+
+
+Testing
+Small viral genome
+Bacteriophage
+Influenza segment
+Coronavirus fragment
+
+Success Criteria
+No coordinate duplication.
+
+PHASE 6 — FUNCTIONAL ANNOTATION
+Goal
+Annotate proteins biologically.
+
+DO NOT USE
+Fake LCS alignment.
+
+Use
+Option 1
+DIAMOND
+
+Option 2
+BLAST+
+
+Metrics
+Identity
+Coverage
+E-value
+Bit Score
+
+Thresholds
+identity_threshold: 30
+
+coverage_threshold: 70
+
+evalue_threshold: 1e-5
+
+
+Outputs
+annotations.csv
+
+
+Success Criteria
+Real alignment statistics.
+
+PHASE 7 — DOMAIN ANNOTATION
+Goal
+Identify protein domains.
+
+Use
+Pfam
+or
+InterProScan
+
+Outputs
+domains.csv
+
+
+Success Criteria
+Each protein linked to domains.
+
+PHASE 8 — PATHWAY MAPPING
+Goal
+Functional interpretation.
+
+Use
+KEGG API
+Reactome API
+
+Map
+Protein
+↓
+Pathway
+
+Output
+pathways.csv
+
+
+Success Criteria
+Pathways retrieved automatically.
+
+PHASE 9 — STATISTICAL ANALYSIS
+Goal
+Scientific filtering.
+
+Professor emphasized:
+p-value
+FDR
+Thresholds
+Automation
+
+Methods
+Hypergeometric Test
+Benjamini-Hochberg Correction
+Enrichment Score
+
+Thresholds
+pvalue < 0.05
+
+fdr < 0.05
+
+
+Output
+enrichment_results.csv
+
+
+Success Criteria
+No fabricated statistics.
+
+PHASE 10 — VISUALIZATION
+Goal
+Generate publication-quality figures.
+
+Required Plots
+Bar Plot
+Top pathways
+
+Bubble Plot
+Pathway enrichment
+
+Heatmap
+Annotation matrix
+
+Network Graph
+Protein ↔ Pathway
+
+Libraries
+Plotly
+NetworkX
+Matplotlib
+
+Output
+PNG
+SVG
+PDF
+
+PHASE 11 — AI INTERPRETATION
+Goal
+Human-readable explanation.
+
+Rule
+AI NEVER computes:
+p-values
+FDR
+ORFs
+Annotations
+
+AI ONLY explains results.
+
+Model
+Gemini
+GPT
+Claude
+
+Outputs
+Genome summary
+Pathway interpretation
+Biological significance
+Research recommendations
+
+PHASE 12 — REPORT GENERATION
+Goal
+Automated publication-ready reports.
+
+Generate
+PDF
+Contains:
+QC
+ORFs
+Annotations
+Pathways
+Statistics
+AI Summary
+
+HTML
+Interactive version
+
+CSV
+Raw results
+
+JSON
+Machine-readable
+
+Success Criteria
+One-click report generation.
+
+PHASE 13 — STREAMLIT WEB APPLICATION
+Goal
+Professor demonstration interface.
+
+Modules
+Upload
+QC
+ORF
+Annotation
+Pathways
+Statistics
+Visualization
+AI Summary
+Reports
+Logs
+
+Features
+Progress Bar
+Run Status
+Error Tracking
+Download Buttons
+
+PHASE 14 — TESTING & VALIDATION
+Goal
+Scientific verification.
+
+Test Datasets
+SARS-CoV-2
+Influenza
+Bacteriophage Lambda
+Dengue Virus
+
+Verify
+ORFs
+Annotations
+Pathways
+Statistics
+Reports
+
+PHASE 15 — FINAL VIVA PACKAGE
+Deliverables
+Source Code
+GitHub Repository
+User Manual
+Technical Documentation
+Architecture Diagram
+Database Schema
+Project Report
+Sample Dataset
+Generated Reports
+PowerPoint Presentation
+Demo Video
+
+FINAL PROFESSOR REQUIREMENT CHECKLIST
+Requirement
+Status
+Raw FASTA Input
+✅
+Raw FASTQ Input
+✅
+Automatic Pipeline
+✅
+QC Analysis
+✅
+Normalization
+✅
+ORF Prediction
+✅
+Functional Annotation
+✅
+Domain Annotation
+✅
+KEGG Mapping
+✅
+Reactome Mapping
+✅
+Statistical Filtering
+✅
+FDR Correction
+✅
+Visualization
+✅
+AI Interpretation
+✅
+PDF Reports
+✅
+HTML Reports
+✅
+Modular Python Code
+✅
+Database Integration
+✅
+Logging System
+✅
+Streamlit Interface
+✅
+Fully Automated Workflow
+✅
+Viva Defensible Design
+✅
+These six documents together (PRD, TRD, App Flow, UI/UX Brief, Backend Schema, and Implementation Plan) form a complete blueprint for my Functional Genomics project and are detailed enough to guide Antigravity phase-by-phase while staying aligned with your proposal and your professor's requirements.
+
+
+
+
+
+
+
+
+If You Want to Rebuild from Scratch
+Only do that if Antigravity tells you:
+Annotation is fake
+Statistics are fake
+ORF prediction is fundamentally broken
+Architecture is unsalvageable
+In that case:
+Create a brand-new project.
+Give only the 6 documents.
+Then follow the Implementation Plan phase-by-phase.
+Never ask:
+Build the complete project.
+Instead:
+Phase 0 → Architecture
+Phase 1 → Input Handling
+Phase 2 → Preprocessing
+Phase 3 → QC
+Phase 4 → Normalization
+...
+
+and review each phase before moving on.
+
+
+
+
+
+
+
+PathoScope AI v2.0 Roadmap
+
+
+For your Functional Genomics course project, I would divide improvements into two categories:
+1. Improvements Worth Adding Before Submission
+These directly strengthen your project against professor questions.
+A. Real Viral Annotation Database
+Currently most student projects use hardcoded annotations.
+Upgrade to:
+NCBI Virus
+UniProt Viral Proteins
+RefSeq Viral Proteins
+Benefits:
+Real annotations
+Real accession IDs
+More scientific credibility
+
+B. Better ORF Prediction
+Most AI-generated projects make this mistake:
+predict dozens of overlapping ORFs
+report all as genes
+Add:
+overlap filtering
+longest ORF selection
+coordinate conflict resolution
+This was one of the biggest issues in the audit.
+
+C. Real Similarity Search
+Instead of:
+string matching
+LCS
+custom similarity
+
+Use:
+BLAST+
+DIAMOND
+Outputs:
+Identity %
+Coverage %
+E-value
+Bit score
+These are standard bioinformatics metrics.
+
+D. Proper Quality Control
+Professor specifically emphasized raw file processing.
+Add:
+Input FASTA/FASTQ
+Automatic:
+sequence count
+length distribution
+GC%
+ambiguous bases %
+duplicate sequences
+invalid characters
+Generate QC report.
+Similar to:
+FastQC
+but simplified.
+
+E. Better Report
+Add:
+Executive Summary
+Example:
+Input sequences: 1,245
+
+Passed QC: 1,211
+
+Predicted ORFs: 87
+
+Annotated proteins: 74
+
+Significant pathways: 8
+
+Top pathway:
+Viral Entry into Host Cell
+(FDR = 0.003)
+
+Professors love summary pages.
+
+2. Improvements That Can Impress During Viva
+These are not required but make the project look much more advanced.
+
+A. Comparative Analysis Mode
+Allow:
+Input A = Viral strain 1
+Input B = Viral strain 2
+Pipeline outputs:
+shared genes
+unique genes
+pathway differences
+Very useful viva discussion point.
+
+B. Mutation Detection
+Add:
+Reference Genome
+↓
+Sample Genome
+↓
+Mutation Detection
+Output:
+Position
+Reference
+Observed
+Effect
+
+For example:
+23403 A→G
+Spike D614G
+
+Looks highly professional.
+
+C. Genome Browser
+Mini genome visualization.
+Show:
+Genome
+│─────────────│
+
+ORF1ab
+Spike
+Envelope
+Membrane
+Nucleocapsid
+
+Interactive view.
+Excellent for demonstrations.
+
+D. Protein Structure Integration
+Connect with:
+AlphaFold
+or
+RCSB Protein Data Bank
+Show:
+predicted structure links
+known structures
+Very attractive feature.
+
+E. Batch Processing
+Instead of:
+one genome
+
+Support:
+100 genomes
+
+Automatically.
+Makes it resemble a real research pipeline.
+
+3. Features I Would NOT Add
+These often sound impressive but add little value.
+❌ AI predicts pathways
+Bad science.
+Pathways should come from:
+annotation
+enrichment analysis
+AI should only explain results.
+
+❌ AI predicts gene function
+Professor may challenge this.
+Keep function assignment database-driven.
+
+❌ Fancy animations
+Looks nice but adds no scientific value.
+
+❌ Deep learning classifier
+Unless you can defend it mathematically.
+Many student projects add neural networks unnecessarily.
+
+4. If You Ever Want To Turn This Into a Publication
+Then I would extend it toward:
+PathoScope AI v2
+Input:
+FASTQ
+FASTA
+Gene Expression Matrix
+Modules:
+QC
+Assembly
+ORF Prediction
+Functional Annotation
+KEGG Mapping
+Reactome Mapping
+Pfam Domain Analysis
+Viral Mutation Analysis
+Comparative Genomics
+Network Analysis
+AI Biological Interpretation
+Automated Research Report Generation
+That version could potentially become a publishable bioinformatics tool if implemented rigorously and benchmarked against existing pipelines.
+For your current course project, the highest-value upgrades are:
+Real BLAST/DIAMOND annotation.
+Proper QC for FASTA/FASTQ.
+ORF overlap filtering.
+Real KEGG/Reactome/Pfam integration.
+Strong automated PDF/HTML report.
+Those five improvements will give the biggest increase in scientific credibility while staying aligned with your submitted proposal.
+
+
+
+
+
+
+
+PROMPT 
+
+At this stage, don't give Antigravity only the 6 documents and say "build my project."
+That is exactly how projects become bloated, inconsistent, and full of AI-generated scientific mistakes.
+Instead, treat the documents as the Project Bible.
+
+Recommended File Name
+I would combine everything into a single master document:
+PathoScope_AI_Project_Blueprint_v1.0.docx
+Contents:
+PRD
+TRD
+App Flow
+UI/UX Brief
+Backend Schema
+Implementation Plan
+PathoScope AI v2.0 Roadmap
+Professor Requirements
+Scientific Constraints
+Viva Defense Notes
+This becomes the source of truth.
+
+Folder Structure
+Project_Docs/
+
+├── PathoScope_AI_Project_Blueprint_v1.0.docx
+├── Project_Proposal_Submitted.pdf
+├── Professor_Requirements.pdf
+├── Existing_Project_Code/
+
+
+FIRST Prompt To Give Antigravity
+When opening the existing project:
+You are acting as a Senior Bioinformatics Software Architect, Functional Genomics Researcher, Scientific Auditor, and Project Supervisor.
+IMPORTANT:
+Do NOT write code yet.
+Do NOT modify files yet.
+Do NOT generate placeholder implementations.
+Do NOT generate mock biological databases.
+Do NOT generate fake statistical methods.
+Your first task is to fully understand the project before making any changes.
+I have provided:
+My original Functional Genomics project proposal.
+My complete Project Blueprint document containing:
+PRD
+TRD
+App Flow
+UI/UX Design Brief
+Backend Schema
+Implementation Plan
+Future Roadmap
+Professor Requirements
+Your task:
+PHASE 0: PROJECT AUDIT
+Read every document completely.
+Then analyze the entire existing codebase.
+Perform a comprehensive gap analysis.
+For every module identify:
+What currently exists
+What is missing
+What is scientifically incorrect
+What violates my proposal
+What violates professor requirements
+What appears to be placeholder logic
+What appears AI-generated or simulated
+What should be rewritten
+What can be retained
+Create a table:
+Module | Current Status | Issues | Required Changes | Priority
+Then produce:
+Architecture Review
+Scientific Validity Review
+Bioinformatics Review
+Functional Genomics Review
+Statistical Review
+Software Engineering Review
+Reproducibility Review
+Then compare the project against:
+Project Proposal
+Professor Requirements
+Blueprint Documents
+Output a final document called:
+PROJECT_COMPLIANCE_AUDIT.md
+Include:
+Compliance Score (%)Scientific Score (/10)Professor Requirement Score (/10)Implementation Completeness (%)
+DO NOT WRITE CODE.
+DO NOT MODIFY ANY FILES.
+ONLY AUDIT.
+
+After Audit Is Finished
+Use this prompt:
+Now that the audit is complete:
+Create a detailed implementation roadmap.
+Requirements:
+Use the Project Blueprint as the source of truth.
+Preserve working modules.
+Rewrite scientifically invalid modules.
+Replace simulated biology with biologically valid approaches.
+Maintain compatibility with the current architecture when possible.
+Create:
+PHASE 1Architecture Fixes
+PHASE 2Input Handling & Raw FASTA/FASTQ Processing
+PHASE 3QC & Normalization
+PHASE 4ORF Prediction
+PHASE 5Functional Annotation
+PHASE 6Pathway & Domain Mapping
+PHASE 7Statistical Analysis
+PHASE 8Visualization
+PHASE 9AI Interpretation
+PHASE 10Automated Reporting
+For each phase provide:
+ObjectivesFiles affectedDependenciesScientific validation criteriaTesting strategyExpected outputs
+Do not code yet.
+Generate IMPLEMENTATION_ROADMAP.md only.
+
+Then Start Actual Development
+Only after the roadmap is approved:
+Begin implementation using the approved roadmap.
+Rules:
+Work one phase at a time.
+Never modify future phases.
+Never introduce placeholder biology.
+Never fabricate p-values.
+Never fabricate E-values.
+Never hardcode pathway results.
+Never hardcode annotation outputs.
+Every module must be testable independently.
+Every function must contain:
+purpose
+inputs
+outputs
+biological rationale
+After finishing each phase:
+Generate:
+PHASE_X_REPORT.md
+containing:
+files created
+files modified
+scientific assumptions
+limitations
+test results
+remaining issues
+Then stop and wait for approval before continuing.
+
+What I would do if I were in your position
+Upload the Project Blueprint v1.0 document.
+Upload the original proposal.
+Open the existing Antigravity project.
+Run the Audit Prompt first.
+Read the audit carefully.
+Run the Roadmap Prompt.
+Only then start coding phase-by-phase.
+That workflow is much closer to how a real bioinformatics software team would develop a functional genomics pipeline and gives you the best chance of producing a project you can defend during viva.

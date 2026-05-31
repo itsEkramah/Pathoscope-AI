@@ -1,0 +1,20 @@
+[
+    {
+        "sequence_id": "seq_duplicate_1",
+        "sequence_length": 120,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "seq_duplicate_2",
+        "sequence_length": 120,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "seq_duplicate_3",
+        "sequence_length": 120,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    }
+]

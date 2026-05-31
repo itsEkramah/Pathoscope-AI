@@ -1,0 +1,3 @@
+protein_id,uniprot_id,subject_db_id,pathway_id,pathway_description,parent_pathway_id,parent_pathway_description,source_database,pathway_confidence_score,pfam_validated
+NC_045512.2_predicted_orf_101,P0DTC2,sp|P0DTC2|SPIKE_SARS2,map04064,NF-kappa B signaling pathway,hierarchy,Environmental Information Processing,KEGG,0.5967,0
+NC_045512.2_predicted_orf_101,P0DTC2,sp|P0DTC2|SPIKE_SARS2,R-HSA-9679506,SARS-CoV-2 Infection / Virion Assembly,,,Reactome,0.5967,0
