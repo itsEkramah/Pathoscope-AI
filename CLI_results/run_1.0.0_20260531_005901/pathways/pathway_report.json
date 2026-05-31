@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "pipeline": "PathoScope AI Default Run",
+        "version": "1.0.0",
+        "hmmer_evalue_threshold": 0.0001,
+        "kegg_api_enabled": true,
+        "sqlite_cache_path": "data\\reference\\pathways_cache.db",
+        "software_versions": {
+            "hmmer": "3.3.2",
+            "pfam": "35.0",
+            "bioservices": "N/A"
+        },
+        "reproducibility": {
+            "hmmscan_command": "hmmscan --domtblout <out> -E 0.0001 data\\reference\\Pfam-A.hmm <in>"
+        }
+    },
+    "domains": {
+        "total_domains_detected": 0,
+        "unique_domain_families": 0
+    },
+    "pathways": {
+        "total_proteins_mapped": 1,
+        "total_pathway_annotations": 2,
+        "unique_pathways_implicated": 2
+    },
+    "taxonomy": {
+        "total_proteins_classified": 10,
+        "unique_viral_families": 1
+    },
+    "output_files": {
+        "pfam_domains_csv": "D:\\FUCTIONAL_GENOMICS_PROJECT\\CLI_results\\run_1.0.0_20260531_005901\\pathways\\pfam_domains.csv",
+        "mapped_pathways_csv": "D:\\FUCTIONAL_GENOMICS_PROJECT\\CLI_results\\run_1.0.0_20260531_005901\\pathways\\mapped_pathways.csv",
+        "taxonomy_classification_csv": "D:\\FUCTIONAL_GENOMICS_PROJECT\\CLI_results\\run_1.0.0_20260531_005901\\pathways\\taxonomy_classification.csv",
+        "pathway_relationship_graph": "D:\\FUCTIONAL_GENOMICS_PROJECT\\CLI_results\\run_1.0.0_20260531_005901\\pathways\\pathway_relationship_graph.png",
+        "pathway_report_json": "D:\\FUCTIONAL_GENOMICS_PROJECT\\CLI_results\\run_1.0.0_20260531_005901\\pathways\\pathway_report.json",
+        "cached_domtblout": "D:\\FUCTIONAL_GENOMICS_PROJECT\\CLI_results\\run_1.0.0_20260531_005901\\pathways\\pfam_domains_cache.domtblout"
+    }
+}

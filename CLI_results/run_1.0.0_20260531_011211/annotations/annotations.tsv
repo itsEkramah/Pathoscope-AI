@@ -1,0 +1,38 @@
+protein_id	length_aa	annotation_status	uniprot_id	subject_db_id	description	evalue	e_val	bitscore	identity_percent	identity_pct	query_coverage	query_coverage_pct	subject_coverage	refined_identity	refined_length	annotation_confidence
+SRR13182871.7_predicted_orf_1	30	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.9_predicted_orf_1	30	Annotated	P0DTD1	sp|P0DTD1|R1AB_SARS2	Homolog to sp|P0DTD1|R1AB_SARS2 (evalue: 1.22e-15)	1.22e-15	1.22e-15	66.2	100.0	100.0	100.0	100.0	0.42	100.0	30.0	0.6597
+SRR13182871.16_predicted_orf_1	30	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.18_predicted_orf_1	30	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.18_predicted_orf_2	45	Annotated	P0DTG1	sp|P0DTG1|ORF3C_SARS2	Homolog to sp|P0DTG1|ORF3C_SARS2 (evalue: 2.93e-21)	2.93e-21	2.93e-21	75.9	97.56	97.56	91.11	91.11	100.0	97.56	41.0	0.6481
+SRR13182871.23_predicted_orf_1	42	Annotated	P0DTC5	sp|P0DTC5|VME1_SARS2	Homolog to sp|P0DTC5|VME1_SARS2 (evalue: 2.48e-22)	2.48e-22	2.48e-22	83.2	100.0	100.0	100.0	100.0	18.92	100.0	42.0	0.6864
+SRR13182871.28_predicted_orf_1	42	Annotated	P0DTD2	sp|P0DTD2|ORF9B_SARS2	Homolog to sp|P0DTD2|ORF9B_SARS2 (evalue: 1.54e-22)	1.54e-22	1.54e-22	80.5	100.0	100.0	100.0	100.0	43.3	100.0	42.0	0.6872
+SRR13182871.28_predicted_orf_2	30	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.33_predicted_orf_1	30	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.34_predicted_orf_1	31	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.39_predicted_orf_1	32	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.40_predicted_orf_1	33	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.41_predicted_orf_1	38	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.43_predicted_orf_1	30	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.44_predicted_orf_1	57	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.45_predicted_orf_1	33	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.45_predicted_orf_2	58	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.51_predicted_orf_1	34	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.65_predicted_orf_1	40	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.65_predicted_orf_2	40	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.67_predicted_orf_1	34	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.69_predicted_orf_1	40	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.69_predicted_orf_2	40	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.70_predicted_orf_1	33	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.76_predicted_orf_1	80	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.77_predicted_orf_1	58	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.77_predicted_orf_2	40	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.79_predicted_orf_1	65	Annotated	P0DTC1	sp|P0DTC1|R1A_SARS2	Homolog to sp|P0DTC1|R1A_SARS2 (evalue: 2.55e-36)	2.55e-36	2.55e-36	127.0	96.92	96.92	100.0	100.0	1.48	96.92	65.0	0.7331
+SRR13182871.83_predicted_orf_1	33	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.85_predicted_orf_1	33	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.86_predicted_orf_1	49	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.86_predicted_orf_2	31	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.87_predicted_orf_1	30	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.92_predicted_orf_1	49	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.96_predicted_orf_1	38	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.96_predicted_orf_2	33	Hypothetical Protein		None	hypothetical protein											0.0
+SRR13182871.98_predicted_orf_1	30	Hypothetical Protein		None	hypothetical protein											0.0

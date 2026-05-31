@@ -1,0 +1,29 @@
+{
+    "meta": {
+        "pipeline": "PathoScope AI Default Run",
+        "version": "1.0.0",
+        "alignment_engine": "diamond",
+        "eval_threshold": 1e-05,
+        "identity_threshold": 30.0,
+        "coverage_threshold": 50.0
+    },
+    "counts": {
+        "total_proteins_queried": 5,
+        "total_annotated": 0,
+        "total_hypothetical": 5,
+        "total_raw_alignments": 0,
+        "total_alternative_hits": 0
+    },
+    "metrics": {
+        "annotation_rate_percent": 0.0,
+        "mean_identity_percent": 0.0,
+        "mean_query_coverage_percent": 0.0
+    },
+    "output_files": {
+        "complete_annotations_csv": "CLI_results\\run_1.0.0_20260525_114136\\annotations\\annotated_proteins.csv",
+        "top_hits_csv": "CLI_results\\run_1.0.0_20260525_114136\\annotations\\top_hits.csv",
+        "rejected_hits_csv": "CLI_results\\run_1.0.0_20260525_114136\\annotations\\rejected_hits.csv",
+        "annotation_report_json": "CLI_results\\run_1.0.0_20260525_114136\\annotations\\annotation_report.json",
+        "cached_tsv": "CLI_results\\run_1.0.0_20260525_114136\\annotations\\alignment_results_cache.tsv"
+    }
+}

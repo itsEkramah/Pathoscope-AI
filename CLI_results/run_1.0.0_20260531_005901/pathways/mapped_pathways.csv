@@ -1,0 +1,3 @@
+protein_id,uniprot_id,subject_db_id,pathway_id,pathway_description,parent_pathway_id,parent_pathway_description,source_database,pathway_confidence_score,pfam_validated
+NC_007372.1_predicted_orf_2,O91741,sp|O91741|RDRP_I93A0,map03010,Ribosome,hierarchy,Genetic Information Processing,KEGG,0.5964,0
+NC_007372.1_predicted_orf_2,O91741,sp|O91741|RDRP_I93A0,R-HSA-1640170,RNA Polymerase II Transcription,,,Reactome,0.5964,0

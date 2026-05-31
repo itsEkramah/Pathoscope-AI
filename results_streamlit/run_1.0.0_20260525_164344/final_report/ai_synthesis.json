@@ -1,0 +1,10 @@
+{
+    "concise_summary": "PathoScope AI processed the viral genome sequence (GC content: 0.0%) and successfully predicted 5 open reading frames (average length: 119 aa). Homology searches identified 2 high-confidence Swiss-Prot matches and 0 Pfam domains, implicating 0 host biological pathway networks for downstream functional analysis.",
+    "detailed_biological_interpretation": "PathoScope AI conducted deterministic sequence QC and gene scanning. GC content is calculated at 0.0%, and sequence validation N50 score is 0 bp. A total of 5 open reading frames were predicted using frame-scanning, ranging in size 33-231 amino acids. \nReference Database Homology: - ORF mapping to Swiss-Prot accession P17042 was detected with a bitscore of 451.0 (Identity: 100.0%, Query Coverage: 100.0%). - ORF mapping to Swiss-Prot accession P17043 was detected with a bitscore of 215.0 (Identity: 100.0%, Query Coverage: 91.87%). \nNo host metabolic or signaling pathways were significantly implicated during enrichment calculations.",
+    "implicated_host_mechanisms": [],
+    "limitations": "Statistical enrichment calculations are constrained by the background universe size settings and local Pfam database footprints. Dynamic pathways rely on Swiss-Prot accession cross-references in KEGG and Reactome networks. Homology alignments are limited to primary sequences, and three-dimensional structural configurations remain unmodeled. Hypothetical proteins lacking reference database alignments are excluded from pathway projection lists.",
+    "confidence_warnings": [
+        "In silico predictions represent high-confidence functional hypotheses and require downstream in vitro laboratory validation.",
+        "A total of 3 predicted open reading frames failed reference database alignments and have been classified as hypothetical proteins."
+    ]
+}

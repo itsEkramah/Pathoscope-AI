@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "pipeline": "PathoScope AI Default Run",
+        "version": "1.0.0",
+        "input_file": "sample.fasta",
+        "duplicate_headers_policy": "reject",
+        "remove_duplicate_sequences_policy": false
+    },
+    "counts": {
+        "total_processed": 1,
+        "total_kept": 1,
+        "total_discarded": 0,
+        "duplicate_headers_encountered": 0,
+        "duplicate_sequences_encountered": 0
+    },
+    "metrics": {
+        "total_bases": 560,
+        "min_length": 560,
+        "max_length": 560,
+        "mean_length": 560.0,
+        "n50": 560,
+        "mean_gc_percent": 61.61
+    },
+    "base_frequencies": {
+        "G": 160,
+        "T": 90,
+        "C": 185,
+        "A": 125
+    },
+    "output_files": {
+        "cleaned_fasta": "CLI_results\\run_1.0.0_20260525_113859\\preprocessed\\cleaned.fasta",
+        "rejected_fasta": "CLI_results\\run_1.0.0_20260525_113859\\preprocessed\\rejected.fasta",
+        "qc_statistics_csv": "CLI_results\\run_1.0.0_20260525_113859\\preprocessed\\qc_statistics.csv",
+        "preprocessing_report_json": "CLI_results\\run_1.0.0_20260525_113859\\preprocessed\\preprocessing_report.json"
+    }
+}

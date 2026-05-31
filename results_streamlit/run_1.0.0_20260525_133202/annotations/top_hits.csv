@@ -1,0 +1,2 @@
+query_id,subject_id,identity_percent,alignment_length,evalue,bitscore,query_coverage,subject_coverage,mismatch,gapopen,qstart,qend,sstart,send,qlen,slen,refined_identity,refined_length,is_refined,annotation_confidence
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|O11283|HEMA_I89A2,91.9,566,0.0,1010.0,100.0,100.0,46,0,1,566,1,566,566,566,91.87,566,1,0.9756

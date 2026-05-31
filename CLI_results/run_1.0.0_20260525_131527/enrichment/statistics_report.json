@@ -1,0 +1,24 @@
+{
+    "meta": {
+        "pipeline": "PathoScope AI Default Run",
+        "version": "1.0.0",
+        "background_universe_N": 10000,
+        "fdr_threshold_alpha": 0.05,
+        "statistical_assumptions": {
+            "test_type": "One-sided upper-tail Hypergeometric test (Fisher's Exact Test)",
+            "multiple_testing_correction": "Benjamini-Hochberg False Discovery Rate (FDR)",
+            "sampling_conditions": "Sampling without replacement from a finite background population",
+            "double_counting_safeguard": "Overlapping ORFs collapsed to unique gene accessions; pathway mappings collapsed to unique gene-pathway links"
+        }
+    },
+    "counts": {
+        "unique_query_genes_n": 0,
+        "total_pathways_tested": 0,
+        "significant_pathways_enriched": 0
+    },
+    "output_files": {
+        "complete_enrichment_csv": "CLI_results\\run_1.0.0_20260525_131527\\enrichment\\enrichment_results.csv",
+        "significant_pathways_csv": "CLI_results\\run_1.0.0_20260525_131527\\enrichment\\significant_pathways.csv",
+        "statistics_report_json": "CLI_results\\run_1.0.0_20260525_131527\\enrichment\\statistics_report.json"
+    }
+}

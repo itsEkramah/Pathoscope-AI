@@ -1,0 +1,2 @@
+sequence_id,length,gc_percent,ambiguous_count,ambiguous_percent,status,rejection_reason,duplicate_type
+PathoScope_Sample_Bacteriophage_MS2_Isolate,560,61.61,0,0.0,ACCEPTED,,None

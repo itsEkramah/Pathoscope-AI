@@ -1,0 +1,3 @@
+pathway_id,description,query_count_k,fold_enrichment,raw_pvalue,adjusted_pvalue_fdr,significance,enrichment_score_es,normalized_enrichment_score_nes,fdr_qvalue
+R-HSA-9679506,SARS-CoV-2 Infection / Virion Assembly,1,66.6667,0.015,0.015,SIGNIFICANT,-0.8333,-1.0965,0.7835
+map04064,NF-kappa B signaling pathway,1,66.6667,0.015,0.015,SIGNIFICANT,-0.8333,-1.0658,0.4536

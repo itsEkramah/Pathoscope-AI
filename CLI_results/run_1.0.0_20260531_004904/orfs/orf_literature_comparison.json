@@ -1,0 +1,8 @@
+[
+    {
+        "sequence_id": "seq_invalid_chars",
+        "sequence_length": 106,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    }
+]

@@ -1,0 +1,3 @@
+pathway_id,description,source_database,query_count_k,query_set_size_n,background_count_M,background_universe_N,fold_enrichment,odds_ratio,raw_pvalue,adjusted_pvalue_fdr,significance,enrichment_score_es,normalized_enrichment_score_nes,fdr_qvalue,ssgsea_enrichment_score_raw,ssgsea_enrichment_score_normalized,average_annotation_confidence,multi_evidence_pathway_score
+map03010,Ribosome,KEGG,1,1,150,10000,66.6667,inf,0.015,0.03,SIGNIFICANT,0.7778,1.0092,1.0,2.7778,1.0,0.5964,6.6497
+R-HSA-1640170,RNA Polymerase II Transcription,Reactome,1,1,1200,10000,8.3333,inf,0.12,0.12,NOT_SIGNIFICANT,0.7778,0.9625,0.6593,2.7778,1.0,0.5964,6.3302

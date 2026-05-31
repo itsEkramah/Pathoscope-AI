@@ -1,0 +1,2 @@
+sequence_id,length,gc_percent,ambiguous_count,ambiguous_percent,status,rejection_reason,duplicate_type
+ENA|PV935594|PV935594.1,29760,38.03,0,0.0,ACCEPTED,,None

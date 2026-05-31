@@ -1,0 +1,29 @@
+{
+    "meta": {
+        "pipeline": "PathoScope AI Default Run",
+        "version": "1.0.0",
+        "min_orf_length_aa_filter": 30,
+        "translation_table": 1
+    },
+    "counts": {
+        "total_orfs_predicted": 0,
+        "strand_distribution": {},
+        "frame_distribution": {},
+        "start_codon_frequencies": {},
+        "overlapping_orfs_flagged": 0,
+        "nested_orfs_flagged": 0
+    },
+    "metrics": {
+        "min_length_aa": 0,
+        "max_length_aa": 0,
+        "mean_length_aa": 0,
+        "mean_confidence_score": 0.0
+    },
+    "output_files": {
+        "gff3_coordinates": "D:\\FUCTIONAL_GENOMICS_PROJECT\\CLI_results\\run_1.0.0_20260531_004904\\orfs\\coordinates.gff3",
+        "csv_coordinates": "D:\\FUCTIONAL_GENOMICS_PROJECT\\CLI_results\\run_1.0.0_20260531_004904\\orfs\\coordinates.csv",
+        "proteins_fasta": "D:\\FUCTIONAL_GENOMICS_PROJECT\\CLI_results\\run_1.0.0_20260531_004904\\orfs\\proteins.fasta",
+        "statistics_json": "D:\\FUCTIONAL_GENOMICS_PROJECT\\CLI_results\\run_1.0.0_20260531_004904\\orfs\\orf_statistics.json",
+        "literature_comparison_json": "D:\\FUCTIONAL_GENOMICS_PROJECT\\CLI_results\\run_1.0.0_20260531_004904\\orfs\\orf_literature_comparison.json"
+    }
+}

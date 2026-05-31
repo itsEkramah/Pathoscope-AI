@@ -1,0 +1,61 @@
+[
+    {
+        "sequence_id": "PathoScope_Sample_Bacteriophage_MS2_Isolate",
+        "sequence_length": 560,
+        "matched_reference_genome": "Bacteriophage MS2 (NC_001417)",
+        "matches": [
+            {
+                "reference_protein_name": "Maturation protein (A)",
+                "reference_length_aa": 393,
+                "reference_start": 130,
+                "reference_end": 1309,
+                "reference_strand": "+",
+                "predicted_orf_id": "NOT_DETECTED",
+                "predicted_length_aa": null,
+                "predicted_start": null,
+                "predicted_end": null,
+                "predicted_strand": null,
+                "match_confidence": 0.0
+            },
+            {
+                "reference_protein_name": "Coat protein",
+                "reference_length_aa": 130,
+                "reference_start": 1335,
+                "reference_end": 1727,
+                "reference_strand": "+",
+                "predicted_orf_id": "NOT_DETECTED",
+                "predicted_length_aa": null,
+                "predicted_start": null,
+                "predicted_end": null,
+                "predicted_strand": null,
+                "match_confidence": 0.0
+            },
+            {
+                "reference_protein_name": "Lysis protein",
+                "reference_length_aa": 75,
+                "reference_start": 1678,
+                "reference_end": 1905,
+                "reference_strand": "+",
+                "predicted_orf_id": "NOT_DETECTED",
+                "predicted_length_aa": null,
+                "predicted_start": null,
+                "predicted_end": null,
+                "predicted_strand": null,
+                "match_confidence": 0.0
+            },
+            {
+                "reference_protein_name": "Replicase (RNA polymerase)",
+                "reference_length_aa": 545,
+                "reference_start": 1761,
+                "reference_end": 3398,
+                "reference_strand": "+",
+                "predicted_orf_id": "NOT_DETECTED",
+                "predicted_length_aa": null,
+                "predicted_start": null,
+                "predicted_end": null,
+                "predicted_strand": null,
+                "match_confidence": 0.0
+            }
+        ]
+    }
+]

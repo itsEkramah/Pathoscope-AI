@@ -1,0 +1,2 @@
+sequence_id,length,gc_percent,ambiguous_count,ambiguous_percent,status,rejection_reason,duplicate_type
+ENA|AF389121|AF389121.1,1027,47.03,0,0.0,ACCEPTED,,None

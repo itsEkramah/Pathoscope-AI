@@ -1,0 +1,50 @@
+[
+    {
+        "sequence_id": "NC_007373.1",
+        "sequence_length": 2341,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "NC_007372.1",
+        "sequence_length": 2341,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "NC_007371.1",
+        "sequence_length": 2233,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "NC_007366.1",
+        "sequence_length": 1762,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "NC_007369.1",
+        "sequence_length": 1566,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "NC_007368.1",
+        "sequence_length": 1467,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "NC_007370.1",
+        "sequence_length": 890,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "NC_007367.1",
+        "sequence_length": 1027,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    }
+]

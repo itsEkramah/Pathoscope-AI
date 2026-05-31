@@ -1,0 +1,50 @@
+pipeline:
+  name: "PathoScope AI Default Run"
+  version: "1.0.0"
+  random_seed: 42
+
+preprocessing:
+  min_length: 100                    # Minimum nucleotide sequence length (bp)
+  max_length: 500000                 # Maximum sequence length (bp)
+  max_ambiguous_pct: 5.0             # Discard sequences if IUPAC ambiguous characters exceed this %
+  handle_duplicate_headers: "reject" # Policy for identical IDs: "reject" (discard secondary), "rename" (append _dupN suffix), "allow"
+  remove_duplicate_sequences: false  # Policy for identical sequences: false (flag but keep), true (discard duplicate content)
+
+orf_prediction:
+  translation_table: 1       # Standard genetic code (use 11 for prokaryotes/phages)
+  min_orf_length_aa: 30      # Minimum amino acid length of predicted ORFs (90bp)
+  start_codons: ["ATG", "GTG", "TTG"]
+  stop_codons: ["TAA", "TAG", "TGA"]
+  overlap_threshold_bp: 50   # Overlap tolerance before resolving nested genes
+  resolve_nested: true       # Discard nested ORFs on the same frame
+
+annotation:
+  alignment_engine: "diamond" # "diamond" or "blastp"
+  local_db_path: "data/reference/viral_proteins.dmnd"
+  remote_fallback: false     # Set to true to query NCBI BLAST remote API if local is missing
+  eval_threshold: 1e-5       # Maximum E-value to accept annotation
+  identity_threshold: 30.0   # Minimum percent sequence identity
+  coverage_threshold: 50.0   # Minimum query coverage %
+
+domain_search:
+  hmmer_db_path: "data/reference/Pfam-A.hmm"
+  eval_threshold: 1e-4
+
+pathway_mapping:
+  db_cache_path: "data/reference/pathways_cache.db"
+  use_kegg_api: true
+  kegg_organism: "ko"         # Query KEGG orthology groups
+
+statistics:
+  fdr_threshold: 0.05        # Benjamini-Hochberg FDR significance threshold
+  bg_universe_size: 10000    # Default gene background count for hypergeometric test
+
+ai_interpretation:
+  provider: "openai"         # "ollama" or "openai" or "gemini"
+  model_name: "gpt-4o-mini"       # Local LLM name to run on student laptop
+  api_key_env_var: "OPENAI_API_KEY"
+  temperature: 0.2           # Keep low to prevent creative biological hallucinations
+
+reporting:
+  theme: "dark"
+  pdf_generation: true

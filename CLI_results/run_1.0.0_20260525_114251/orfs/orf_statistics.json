@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "pipeline": "PathoScope AI Default Run",
+        "version": "1.0.0",
+        "min_orf_length_aa_filter": 30,
+        "translation_table": 1
+    },
+    "counts": {
+        "total_orfs_predicted": 5,
+        "strand_distribution": {
+            "-": 2,
+            "+": 3
+        },
+        "frame_distribution": {
+            "-2": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "-1": 1
+        },
+        "start_codon_frequencies": {
+            "ATG": 3,
+            "GTG": 1,
+            "TTG": 1
+        },
+        "overlapping_orfs_flagged": 5
+    },
+    "metrics": {
+        "min_length_aa": 37,
+        "max_length_aa": 98,
+        "mean_length_aa": 59.4
+    },
+    "output_files": {
+        "gff3_coordinates": "CLI_results\\run_1.0.0_20260525_114251\\orfs\\coordinates.gff3",
+        "csv_coordinates": "CLI_results\\run_1.0.0_20260525_114251\\orfs\\coordinates.csv",
+        "proteins_fasta": "CLI_results\\run_1.0.0_20260525_114251\\orfs\\proteins.fasta",
+        "statistics_json": "CLI_results\\run_1.0.0_20260525_114251\\orfs\\orf_statistics.json"
+    }
+}

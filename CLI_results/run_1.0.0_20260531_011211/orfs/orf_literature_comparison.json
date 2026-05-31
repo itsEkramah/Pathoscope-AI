@@ -1,0 +1,344 @@
+[
+    {
+        "sequence_id": "SRR13182871.7",
+        "sequence_length": 109,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.9",
+        "sequence_length": 100,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.10",
+        "sequence_length": 121,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.12",
+        "sequence_length": 145,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.14",
+        "sequence_length": 105,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.16",
+        "sequence_length": 188,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.18",
+        "sequence_length": 260,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.23",
+        "sequence_length": 211,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.26",
+        "sequence_length": 163,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.27",
+        "sequence_length": 123,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.28",
+        "sequence_length": 255,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.33",
+        "sequence_length": 198,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.34",
+        "sequence_length": 186,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.39",
+        "sequence_length": 145,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.40",
+        "sequence_length": 186,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.41",
+        "sequence_length": 159,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.42",
+        "sequence_length": 244,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.43",
+        "sequence_length": 176,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.44",
+        "sequence_length": 259,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.45",
+        "sequence_length": 271,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.46",
+        "sequence_length": 260,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.47",
+        "sequence_length": 100,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.48",
+        "sequence_length": 137,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.51",
+        "sequence_length": 166,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.53",
+        "sequence_length": 118,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.55",
+        "sequence_length": 144,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.56",
+        "sequence_length": 146,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.57",
+        "sequence_length": 174,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.58",
+        "sequence_length": 233,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.59",
+        "sequence_length": 209,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.63",
+        "sequence_length": 166,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.64",
+        "sequence_length": 176,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.65",
+        "sequence_length": 264,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.66",
+        "sequence_length": 127,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.67",
+        "sequence_length": 179,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.68",
+        "sequence_length": 100,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.69",
+        "sequence_length": 241,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.70",
+        "sequence_length": 151,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.71",
+        "sequence_length": 141,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.76",
+        "sequence_length": 285,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.77",
+        "sequence_length": 260,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.78",
+        "sequence_length": 202,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.79",
+        "sequence_length": 266,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.82",
+        "sequence_length": 159,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.83",
+        "sequence_length": 181,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.84",
+        "sequence_length": 104,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.85",
+        "sequence_length": 174,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.86",
+        "sequence_length": 297,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.87",
+        "sequence_length": 153,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.90",
+        "sequence_length": 113,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.92",
+        "sequence_length": 198,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.93",
+        "sequence_length": 105,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.94",
+        "sequence_length": 166,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.95",
+        "sequence_length": 200,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.96",
+        "sequence_length": 213,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.98",
+        "sequence_length": 126,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    },
+    {
+        "sequence_id": "SRR13182871.99",
+        "sequence_length": 124,
+        "matched_reference_genome": "None (No closely matching reference virus in catalog)",
+        "matches": []
+    }
+]

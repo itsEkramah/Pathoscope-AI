@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "pipeline": "PathoScope AI Default Run",
+        "version": "1.0.0",
+        "input_file": "temp_uploaded_genome.fasta",
+        "duplicate_headers_policy": "reject",
+        "remove_duplicate_sequences_policy": false
+    },
+    "counts": {
+        "total_processed": 1,
+        "total_kept": 1,
+        "total_discarded": 0,
+        "duplicate_headers_encountered": 0,
+        "duplicate_sequences_encountered": 0
+    },
+    "metrics": {
+        "total_bases": 1027,
+        "min_length": 1027,
+        "max_length": 1027,
+        "mean_length": 1027.0,
+        "n50": 1027,
+        "mean_gc_percent": 47.03
+    },
+    "base_frequencies": {
+        "A": 296,
+        "G": 267,
+        "C": 216,
+        "T": 248
+    },
+    "output_files": {
+        "cleaned_fasta": "results_streamlit\\run_1.0.0_20260525_111902\\preprocessed\\cleaned.fasta",
+        "rejected_fasta": "results_streamlit\\run_1.0.0_20260525_111902\\preprocessed\\rejected.fasta",
+        "qc_statistics_csv": "results_streamlit\\run_1.0.0_20260525_111902\\preprocessed\\qc_statistics.csv",
+        "preprocessing_report_json": "results_streamlit\\run_1.0.0_20260525_111902\\preprocessed\\preprocessing_report.json"
+    }
+}

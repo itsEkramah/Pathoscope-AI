@@ -1,0 +1,6 @@
+protein_id,subject_db_id,uniprot_organism_code,ictv_class,ictv_order,ictv_family,ictv_genus,baltimore_group
+SRR13182871.9_predicted_orf_1,sp|P0DTD1|R1AB_SARS2,SARS2,Pisoniviricetes,Nidovirales,Coronaviridae,Betacoronavirus,Group IV (+ssRNA)
+SRR13182871.18_predicted_orf_2,sp|P0DTG1|ORF3C_SARS2,SARS2,Pisoniviricetes,Nidovirales,Coronaviridae,Betacoronavirus,Group IV (+ssRNA)
+SRR13182871.23_predicted_orf_1,sp|P0DTC5|VME1_SARS2,SARS2,Pisoniviricetes,Nidovirales,Coronaviridae,Betacoronavirus,Group IV (+ssRNA)
+SRR13182871.28_predicted_orf_1,sp|P0DTD2|ORF9B_SARS2,SARS2,Pisoniviricetes,Nidovirales,Coronaviridae,Betacoronavirus,Group IV (+ssRNA)
+SRR13182871.79_predicted_orf_1,sp|P0DTC1|R1A_SARS2,SARS2,Pisoniviricetes,Nidovirales,Coronaviridae,Betacoronavirus,Group IV (+ssRNA)

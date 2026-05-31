@@ -1,0 +1,2 @@
+sequence_id,length,gc_percent,ambiguous_count,ambiguous_percent,status,rejection_reason,duplicate_type
+ENA|BN000065|BN000065.1,315242,45.54,0,0.0,ACCEPTED,,None

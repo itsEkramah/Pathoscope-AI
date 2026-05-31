@@ -1,0 +1,6 @@
+protein_id,length_aa,annotation_status,uniprot_id,subject_db_id,description,evalue,e_val,bitscore,identity_percent,identity_pct,query_coverage,query_coverage_pct,subject_coverage
+PathoScope_Sample_Bacteriophage_MS2_Isolate_predicted_orf_1,98,Hypothetical Protein,,None,hypothetical protein,,,,,,,,
+PathoScope_Sample_Bacteriophage_MS2_Isolate_predicted_orf_2,45,Hypothetical Protein,,None,hypothetical protein,,,,,,,,
+PathoScope_Sample_Bacteriophage_MS2_Isolate_predicted_orf_3,37,Hypothetical Protein,,None,hypothetical protein,,,,,,,,
+PathoScope_Sample_Bacteriophage_MS2_Isolate_predicted_orf_4,50,Hypothetical Protein,,None,hypothetical protein,,,,,,,,
+PathoScope_Sample_Bacteriophage_MS2_Isolate_predicted_orf_5,67,Hypothetical Protein,,None,hypothetical protein,,,,,,,,

@@ -1,0 +1,2 @@
+orf_id,sequence_id,start,end,strand,frame,length_bp,length_aa,start_codon,confidence_score,overlap_flag,overlap_with
+NC_000001.1_predicted_orf_1,NC_000001.1,51,443,+,3,393,130,ATG,0.9403,None,

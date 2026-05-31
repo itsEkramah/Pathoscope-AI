@@ -1,0 +1,146 @@
+protein_id,length_aa,annotation_status,uniprot_id,subject_db_id,description,evalue,e_val,bitscore,identity_percent,identity_pct,query_coverage,query_coverage_pct,subject_coverage,refined_identity,refined_length,annotation_confidence
+NC_045512.2_predicted_orf_1,37,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_2,52,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_3,4405,Annotated,P0DTC1,sp|P0DTC1|R1A_SARS2,Homolog to sp|P0DTC1|R1A_SARS2 (evalue: 0.0),0.0,0.0,8659.0,100.0,100.0,100.0,100.0,100.0,100.0,4405.0,1.0
+NC_045512.2_predicted_orf_4,81,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_5,58,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_6,46,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_7,33,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_8,30,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_9,125,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_10,30,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_11,38,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_12,45,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_13,153,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_14,118,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_15,35,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_16,85,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_17,31,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_18,31,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_19,35,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_20,36,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_21,31,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_22,30,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_23,67,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_24,32,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_25,33,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_26,44,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_27,49,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_28,32,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_29,36,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_30,51,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_31,30,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_32,61,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_33,30,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_34,118,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_35,34,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_36,34,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_37,32,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_38,43,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_39,45,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_40,34,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_41,49,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_42,42,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_43,50,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_44,30,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_45,38,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_46,40,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_47,32,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_48,45,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_49,50,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_50,48,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_51,56,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_52,33,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_53,67,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_54,47,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_55,55,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_56,47,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_57,35,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_58,58,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_59,67,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_60,57,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_61,57,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_62,33,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_63,52,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_64,32,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_65,40,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_66,63,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_67,2595,Annotated,P0DTD1,sp|P0DTD1|R1AB_SARS2,Homolog to sp|P0DTD1|R1AB_SARS2 (evalue: 0.0),0.0,0.0,5320.0,100.0,100.0,100.0,100.0,36.57,100.0,2595.0,1.0
+NC_045512.2_predicted_orf_68,40,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_69,49,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_70,47,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_71,55,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_72,45,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_73,32,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_74,33,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_75,30,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_76,31,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_77,32,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_78,49,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_79,31,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_80,69,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_81,34,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_82,47,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_83,40,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_84,47,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_85,68,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_86,57,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_87,51,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_88,78,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_89,34,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_90,34,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_91,58,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_92,30,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_93,30,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_94,47,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_95,81,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_96,47,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_97,41,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_98,88,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_99,50,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_100,32,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_101,1287,Annotated,P0DTC2,sp|P0DTC2|SPIKE_SARS2,Homolog to sp|P0DTC2|SPIKE_SARS2 (evalue: 0.0),0.0,0.0,2467.0,100.0,100.0,98.91,98.91,100.0,100.0,1273.0,0.9967
+NC_045512.2_predicted_orf_102,90,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_103,36,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_104,31,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_105,82,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_106,98,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_107,31,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_108,79,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_109,77,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_110,51,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_111,41,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_112,49,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_113,33,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_114,37,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_115,45,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_116,89,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_117,45,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_118,275,Annotated,P0DTC3,sp|P0DTC3|AP3A_SARS2,Homolog to sp|P0DTC3|AP3A_SARS2 (evalue: 2.58e-202),2.58e-202,2.58e-202,551.0,100.0,100.0,100.0,100.0,100.0,100.0,275.0,1.0
+NC_045512.2_predicted_orf_119,30,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_120,73,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_121,31,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_122,65,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_123,32,Annotated,P59633,sp|P59633|NS3B_SARS,Homolog to sp|P59633|NS3B_SARS (evalue: 1.9e-14),1.9e-14,1.9e-14,60.8,87.5,87.5,100.0,100.0,20.78,87.5,32.0,0.6174
+NC_045512.2_predicted_orf_124,75,Annotated,P0DTC4,sp|P0DTC4|VEMP_SARS2,Homolog to sp|P0DTC4|VEMP_SARS2 (evalue: 6.42e-45),6.42e-45,6.42e-45,137.0,100.0,100.0,100.0,100.0,100.0,100.0,75.0,0.7768
+NC_045512.2_predicted_orf_125,222,Annotated,P0DTC5,sp|P0DTC5|VME1_SARS2,Homolog to sp|P0DTC5|VME1_SARS2 (evalue: 2.76e-157),2.76e-157,2.76e-157,433.0,100.0,100.0,100.0,100.0,100.0,100.0,222.0,1.0
+NC_045512.2_predicted_orf_126,74,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_127,58,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_128,61,Annotated,P0DTC6,sp|P0DTC6|NS6_SARS2,Homolog to sp|P0DTC6|NS6_SARS2 (evalue: 1.73e-36),1.73e-36,1.73e-36,115.0,100.0,100.0,100.0,100.0,100.0,100.0,61.0,0.743
+NC_045512.2_predicted_orf_129,33,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_130,121,Annotated,P0DTC7,sp|P0DTC7|NS7A_SARS2,Homolog to sp|P0DTC7|NS7A_SARS2 (evalue: 8.13e-85),8.13e-85,8.13e-85,242.0,100.0,100.0,100.0,100.0,100.0,100.0,121.0,0.9364
+NC_045512.2_predicted_orf_131,31,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_132,43,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_133,52,Annotated,P0DTD8,sp|P0DTD8|NS7B_SARS2,Homolog to sp|P0DTD8|NS7B_SARS2 (evalue: 5.45e-17),5.45e-17,5.45e-17,65.5,100.0,100.0,82.69,82.69,100.0,100.0,43.0,0.6131
+NC_045512.2_predicted_orf_134,121,Annotated,P0DTC8,sp|P0DTC8|NS8_SARS2,Homolog to sp|P0DTC8|NS8_SARS2 (evalue: 3.18e-91),3.18e-91,3.18e-91,258.0,100.0,100.0,100.0,100.0,100.0,100.0,121.0,0.962
+NC_045512.2_predicted_orf_135,419,Annotated,P0DTC9,sp|P0DTC9|NCAP_SARS2,Homolog to sp|P0DTC9|NCAP_SARS2 (evalue: 1.43e-283),1.43e-283,1.43e-283,769.0,100.0,100.0,100.0,100.0,100.0,100.0,419.0,1.0
+NC_045512.2_predicted_orf_136,48,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_137,38,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_138,32,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_139,45,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_140,88,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_141,86,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_142,68,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_143,58,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+NC_045512.2_predicted_orf_144,38,Annotated,A0A663DJA2,sp|A0A663DJA2|ORF10_SARS2,Homolog to sp|A0A663DJA2|ORF10_SARS2 (evalue: 6.04e-23),6.04e-23,6.04e-23,79.7,100.0,100.0,100.0,100.0,100.0,100.0,38.0,0.6889
+NC_045512.2_predicted_orf_145,51,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0

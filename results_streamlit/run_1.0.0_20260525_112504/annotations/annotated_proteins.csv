@@ -1,0 +1,8 @@
+protein_id,length_aa,annotation_status,subject_db_id,description,evalue,bitscore,identity_percent,query_coverage,subject_coverage
+ENA|EF467817|EF467817.1_predicted_orf_1,230,Annotated,RecName: Full=Non-structural protein 1; Short=NS1; AltName: Full=NS1A [Influenza A virus (A/Leningrad/1954/1(H1N1))],Homolog to RecName: Full=Non-structural protein 1; Short=NS1; AltName: Full=NS1A [Influenza A virus (A/Leningrad/1954/1(H1N1))] (evalue: 1.59988e-170),1.59988e-170,471.5,100.0,100.0,100.0
+ENA|EF467817|EF467817.1_predicted_orf_2,41,Hypothetical Protein,None,hypothetical protein,,,,,
+ENA|EF467817|EF467817.1_predicted_orf_3,167,Hypothetical Protein,None,hypothetical protein,,,,,
+ENA|EF467817|EF467817.1_predicted_orf_4,35,Hypothetical Protein,None,hypothetical protein,,,,,
+ENA|EF467817|EF467817.1_predicted_orf_5,123,Annotated,RecName: Full=Nuclear export protein; Short=NEP; AltName: Full=Non-structural protein 2; Short=NS2 [Influenza A virus (A/X-31(H3N2))],Homolog to RecName: Full=Nuclear export protein; Short=NEP; AltName: Full=Non-structural protein 2; Short=NS2 [Influenza A virus (A/X-31(H3N2))] (evalue: 8.31357e-77),8.31357e-77,225.7,100.0,91.87,93.39
+ENA|EF467817|EF467817.1_predicted_orf_6,32,Hypothetical Protein,None,hypothetical protein,,,,,
+ENA|EF467817|EF467817.1_predicted_orf_7,32,Hypothetical Protein,None,hypothetical protein,,,,,

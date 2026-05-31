@@ -1,0 +1,95 @@
+{
+    "pipeline": {
+        "name": "PathoScope AI Default Run",
+        "version": "1.0.0",
+        "schema_version": "1.0.0"
+    },
+    "environment": {
+        "python_version": "3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)]",
+        "platform": "win32"
+    },
+    "run": {
+        "status": "SUCCESS",
+        "input_file": "temp_uploaded_genome.fasta",
+        "input_md5": "UNKNOWN",
+        "output_dir": "results_streamlit\\run_1.0.0_20260525_125720",
+        "timestamp": "2026-05-25 12:57:57",
+        "execution_times_seconds": {
+            "preprocessing": 0.5623,
+            "orf_prediction": 17.7173,
+            "functional_annotation": 6.0606,
+            "pathway_and_domain_mapping": 1.2108,
+            "pathway_enrichment": 0.0291,
+            "scientific_visualizations": 8.9504,
+            "ai_synthesis": 2.4605
+        }
+    },
+    "config_snapshot": {
+        "pipeline": {
+            "name": "PathoScope AI Default Run",
+            "version": "1.0.0",
+            "random_seed": 42
+        },
+        "preprocessing": {
+            "min_length": 100,
+            "max_length": 500000,
+            "max_ambiguous_pct": 5.0,
+            "handle_duplicate_headers": "reject",
+            "remove_duplicate_sequences": false,
+            "adapter_forward": "AGATCGGAAGAGCACACGTCTGAACTCCAGTCA",
+            "adapter_reverse": "AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT",
+            "paired_end": false,
+            "fastq_r2_path": null,
+            "min_mean_qscore": 30,
+            "low_complexity_filter": true
+        },
+        "orf_prediction": {
+            "translation_table": 1,
+            "min_orf_length_aa": 30,
+            "start_codons": [
+                "ATG",
+                "GTG",
+                "TTG"
+            ],
+            "stop_codons": [
+                "TAA",
+                "TAG",
+                "TGA"
+            ],
+            "overlap_threshold_bp": 50,
+            "resolve_nested": true,
+            "overlap_resolution_policy": "keep_all_flag"
+        },
+        "annotation": {
+            "alignment_engine": "diamond",
+            "local_db_path": "data/reference/viral_proteins.dmnd",
+            "remote_fallback": true,
+            "eval_threshold": 1e-05,
+            "identity_threshold": 30.0,
+            "coverage_threshold": 50.0
+        },
+        "domain_search": {
+            "hmmer_db_path": "data/reference/Pfam-A.hmm",
+            "eval_threshold": 0.0001
+        },
+        "pathway_mapping": {
+            "db_cache_path": "data/reference/pathways_cache.db",
+            "use_kegg_api": true,
+            "kegg_organism": "ko"
+        },
+        "statistics": {
+            "fdr_threshold": 0.05,
+            "bg_universe_size": 10000
+        },
+        "ai_interpretation": {
+            "provider": "openai",
+            "model_name": "gpt-4o-mini",
+            "api_key_env_var": "OPENAI_API_KEY",
+            "temperature": 0.2
+        },
+        "reporting": {
+            "theme": "dark",
+            "pdf_generation": true
+        }
+    }
+}

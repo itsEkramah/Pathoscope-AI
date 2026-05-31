@@ -1,0 +1,6 @@
+protein_id	length_aa	annotation_status	uniprot_id	subject_db_id	description	evalue	e_val	bitscore	identity_percent	identity_pct	query_coverage	query_coverage_pct	subject_coverage	refined_identity	refined_length	annotation_confidence
+ENA|EF467817|EF467817.1_predicted_orf_1	230	Annotated	P17042	sp|P17042|NS1_I54A0	Homolog to sp|P17042|NS1_I54A0 (evalue: 4.95e-164)	4.95e-164	4.95e-164	451.0	100.0	100.0	100.0	100.0	100.0	100.0	230.0	1.0
+ENA|EF467817|EF467817.1_predicted_orf_2	41	Hypothetical Protein		None	hypothetical protein											0.0
+ENA|EF467817|EF467817.1_predicted_orf_3	167	Hypothetical Protein		None	hypothetical protein											0.0
+ENA|EF467817|EF467817.1_predicted_orf_4	123	Annotated	P17043	sp|P17043|NEP_I54A0	Homolog to sp|P17043|NEP_I54A0 (evalue: 4.2e-74)	4.2e-74	4.2e-74	215.0	100.0	100.0	91.87	91.87	93.39	100.0	113.0	0.8691
+ENA|EF467817|EF467817.1_predicted_orf_5	32	Hypothetical Protein		None	hypothetical protein											0.0

@@ -1,0 +1,11 @@
+protein_id,length_aa,annotation_status,uniprot_id,subject_db_id,description,evalue,e_val,bitscore,identity_percent,identity_pct,query_coverage,query_coverage_pct,subject_coverage
+ENA|AF389121|AF389121.1_predicted_orf_1,30,Hypothetical Protein,,None,hypothetical protein,,,,,,,,
+ENA|AF389121|AF389121.1_predicted_orf_2,252,Annotated,P03485,sp|P03485|M1_I34A1,Homolog to sp|P03485|M1_I34A1 (evalue: 3.31e-173),3.31e-173,3.31e-173,476.0,100.0,100.0,100.0,100.0,100.0
+ENA|AF389121|AF389121.1_predicted_orf_3,50,Hypothetical Protein,,None,hypothetical protein,,,,,,,,
+ENA|AF389121|AF389121.1_predicted_orf_4,45,Hypothetical Protein,,None,hypothetical protein,,,,,,,,
+ENA|AF389121|AF389121.1_predicted_orf_5,48,Hypothetical Protein,,None,hypothetical protein,,,,,,,,
+ENA|AF389121|AF389121.1_predicted_orf_6,41,Hypothetical Protein,,None,hypothetical protein,,,,,,,,
+ENA|AF389121|AF389121.1_predicted_orf_7,41,Hypothetical Protein,,None,hypothetical protein,,,,,,,,
+ENA|AF389121|AF389121.1_predicted_orf_8,99,Hypothetical Protein,,None,hypothetical protein,,,,,,,,
+ENA|AF389121|AF389121.1_predicted_orf_9,96,Annotated,B4URD7,sp|B4URD7|M2_I06A0,Homolog to sp|B4URD7|M2_I06A0 (evalue: 1.77e-63),1.77e-63,1.77e-63,186.0,91.6,91.6,98.96,98.96,97.94
+ENA|AF389121|AF389121.1_predicted_orf_10,68,Hypothetical Protein,,None,hypothetical protein,,,,,,,,

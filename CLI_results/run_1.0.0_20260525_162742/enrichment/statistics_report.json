@@ -1,0 +1,29 @@
+{
+    "meta": {
+        "pipeline": "PathoScope AI Default Run",
+        "version": "1.0.0",
+        "background_universe_N": 10000,
+        "fdr_threshold_alpha": 0.05,
+        "statistical_methods": {
+            "test_type": "One-sided upper-tail Hypergeometric + Fisher's Exact Test",
+            "correction": "Benjamini-Hochberg (BH) FDR using statsmodels",
+            "gsea": "Native GSEA Preranked permuter + GSEApy",
+            "redundancy_safeguards": "Redundant overlapping ORFs collapsed to unique accessions"
+        }
+    },
+    "counts": {
+        "unique_query_genes_n": 0,
+        "total_pathways_tested": 0,
+        "significant_pathways_enriched": 0,
+        "gsea_pathways_tested": 0
+    },
+    "output_files": {
+        "complete_enrichment_csv": "CLI_results\\run_1.0.0_20260525_162742\\enrichment\\enrichment_results.csv",
+        "significant_pathways_csv": "CLI_results\\run_1.0.0_20260525_162742\\enrichment\\significant_pathways.csv",
+        "gsea_results_csv": "CLI_results\\run_1.0.0_20260525_162742\\enrichment\\gsea_results.csv",
+        "volcano_plot_data_csv": "CLI_results\\run_1.0.0_20260525_162742\\enrichment\\volcano_plot_data.csv",
+        "enrichment_matrix_csv": "CLI_results\\run_1.0.0_20260525_162742\\enrichment\\enrichment_matrix.csv",
+        "pathway_ranking_reports_csv": "CLI_results\\run_1.0.0_20260525_162742\\enrichment\\pathway_ranking_reports.csv",
+        "statistics_report_json": "CLI_results\\run_1.0.0_20260525_162742\\enrichment\\statistics_report.json"
+    }
+}

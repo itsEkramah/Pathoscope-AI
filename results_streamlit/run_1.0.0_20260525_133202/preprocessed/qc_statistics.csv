@@ -1,0 +1,2 @@
+sequence_id,length,gc_percent,ambiguous_count,ambiguous_percent,status,rejection_reason,duplicate_type
+ENA|CY000001|CY000001.1,1762,42.11,0,0.0,ACCEPTED,,None

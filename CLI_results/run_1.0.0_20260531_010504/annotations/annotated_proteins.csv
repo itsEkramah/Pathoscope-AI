@@ -1,0 +1,2 @@
+protein_id,length_aa,annotation_status,uniprot_id,subject_db_id,description,evalue,e_val,bitscore,identity_percent,identity_pct,query_coverage,query_coverage_pct,subject_coverage,refined_identity,refined_length,annotation_confidence
+NC_000001.1_predicted_orf_1,130,Hypothetical Protein,,,hypothetical protein,,,,,,,,,,,0.0

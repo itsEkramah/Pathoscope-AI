@@ -1,0 +1,14 @@
+protein_id,length_aa,annotation_status,uniprot_id,subject_db_id,description,evalue,e_val,bitscore,identity_percent,identity_pct,query_coverage,query_coverage_pct,subject_coverage,refined_identity,refined_length,annotation_confidence
+ENA|CY000001|CY000001.1_predicted_orf_1,566,Annotated,O11283,sp|O11283|HEMA_I89A2,Homolog to sp|O11283|HEMA_I89A2 (evalue: 0.0),0.0,0.0,1010.0,91.87,91.87,100.0,100.0,100.0,91.87,566.0,0.9756
+ENA|CY000001|CY000001.1_predicted_orf_2,40,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+ENA|CY000001|CY000001.1_predicted_orf_3,38,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+ENA|CY000001|CY000001.1_predicted_orf_4,42,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+ENA|CY000001|CY000001.1_predicted_orf_5,47,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+ENA|CY000001|CY000001.1_predicted_orf_6,34,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+ENA|CY000001|CY000001.1_predicted_orf_7,35,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+ENA|CY000001|CY000001.1_predicted_orf_8,35,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+ENA|CY000001|CY000001.1_predicted_orf_9,106,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+ENA|CY000001|CY000001.1_predicted_orf_10,71,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+ENA|CY000001|CY000001.1_predicted_orf_11,64,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+ENA|CY000001|CY000001.1_predicted_orf_12,35,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0
+ENA|CY000001|CY000001.1_predicted_orf_13,30,Hypothetical Protein,,None,hypothetical protein,,,,,,,,,,,0.0

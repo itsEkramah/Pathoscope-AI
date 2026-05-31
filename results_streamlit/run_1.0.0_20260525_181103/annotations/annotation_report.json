@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "pipeline": "PathoScope AI Default Run",
+        "version": "1.0.0",
+        "alignment_engine": "diamond",
+        "eval_threshold": 1e-05,
+        "identity_threshold": 30.0,
+        "coverage_threshold": 50.0,
+        "software_versions": {
+            "diamond": "2.1.8",
+            "blastp": "N/A",
+            "refinement_module": "Smith-Waterman (BLOSUM62)"
+        },
+        "reproducibility": {
+            "command_log": "diamond blastp --query <in> --db data\\reference\\viral_proteins.dmnd --out <out> --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qlen slen qseq sseq"
+        }
+    },
+    "counts": {
+        "total_proteins_queried": 145,
+        "total_annotated": 13,
+        "total_hypothetical": 132,
+        "total_raw_alignments": 156,
+        "total_alternative_hits": 143
+    },
+    "metrics": {
+        "annotation_rate_percent": 8.97,
+        "mean_identity_percent": 99.04,
+        "mean_query_coverage_percent": 98.58
+    },
+    "output_files": {
+        "complete_annotations_csv": "results_streamlit\\run_1.0.0_20260525_181103\\annotations\\annotated_proteins.csv",
+        "complete_annotations_tsv": "results_streamlit\\run_1.0.0_20260525_181103\\annotations\\annotations.tsv",
+        "top_hits_csv": "results_streamlit\\run_1.0.0_20260525_181103\\annotations\\top_hits.csv",
+        "rejected_hits_csv": "results_streamlit\\run_1.0.0_20260525_181103\\annotations\\rejected_hits.csv",
+        "annotation_report_json": "results_streamlit\\run_1.0.0_20260525_181103\\annotations\\annotation_report.json",
+        "cached_tsv": "results_streamlit\\run_1.0.0_20260525_181103\\annotations\\alignment_results_cache.tsv"
+    }
+}

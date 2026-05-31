@@ -1,0 +1,9 @@
+sequence_id,length,gc_percent,ambiguous_count,ambiguous_percent,status,rejection_reason,duplicate_type
+NC_007373.1,2341,42.5,0,0.0,ACCEPTED,,None
+NC_007372.1,2341,42.25,0,0.0,ACCEPTED,,None
+NC_007371.1,2233,41.69,0,0.0,ACCEPTED,,None
+NC_007366.1,1762,42.0,0,0.0,ACCEPTED,,None
+NC_007369.1,1566,45.79,0,0.0,ACCEPTED,,None
+NC_007368.1,1467,42.74,0,0.0,ACCEPTED,,None
+NC_007370.1,890,41.69,0,0.0,ACCEPTED,,None
+NC_007367.1,1027,46.74,0,0.0,ACCEPTED,,None

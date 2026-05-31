@@ -1,0 +1,2 @@
+sequence_id,length,gc_percent,ambiguous_count,ambiguous_percent,status,rejection_reason,duplicate_type
+ENA|EF467817|EF467817.1,890,44.38,0,0.0,ACCEPTED,,None

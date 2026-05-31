@@ -1,0 +1,3 @@
+pathway_id,description,query_count_k,fold_enrichment,raw_pvalue,adjusted_pvalue_fdr,significance,log2_fold_enrichment,minus_log10_fdr_pvalue
+R-HSA-1640170,RNA Polymerase II Transcription,1,8.3333,0.12,0.12,NOT_SIGNIFICANT,3.0588879182618633,0.9208187539523752
+map03010,Ribosome,1,66.6667,0.015,0.03,SIGNIFICANT,6.058894410400908,1.5228787452803376

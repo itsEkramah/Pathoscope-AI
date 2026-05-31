@@ -1,0 +1,32 @@
+{
+    "software": "FASTA-Preprocessor",
+    "version": "1.0.0",
+    "command_history": "python-fasta-cleaner",
+    "runtime_seconds": 0.363203763961792,
+    "counts": {
+        "total_processed": 1,
+        "total_kept": 1,
+        "total_discarded": 0,
+        "duplicate_headers_encountered": 0,
+        "duplicate_sequences_encountered": 0,
+        "adapter_trimmed_reads": 0
+    },
+    "metrics": {
+        "total_bases": 315242,
+        "min_length": 315242,
+        "max_length": 315242,
+        "mean_length": 315242.0,
+        "n50": 315242,
+        "mean_gc_percent": 45.54
+    },
+    "base_frequencies": {
+        "G": 71123,
+        "A": 87432,
+        "T": 84256,
+        "C": 72431
+    },
+    "meta": {
+        "pipeline": "PathoScope AI Default Run",
+        "version": "1.0.0"
+    }
+}

@@ -1,0 +1,2 @@
+##gff-version 3
+NC_000001.1	PathoScope_ORF	CDS	51	443	0.9403	+	0	ID=NC_000001.1_predicted_orf_1;Name=NC_000001.1_predicted_orf_1;frame=3;start_codon=ATG;overlap=None;confidence_score=0.9403

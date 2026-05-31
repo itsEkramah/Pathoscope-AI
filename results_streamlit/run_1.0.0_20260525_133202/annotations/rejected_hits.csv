@@ -1,0 +1,25 @@
+query_id,subject_id,identity_percent,alignment_length,evalue,bitscore,query_coverage,subject_coverage,mismatch,gapopen,qstart,qend,sstart,send,qlen,slen,refined_identity,refined_length,is_refined,annotation_confidence,rejection_reason
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|Q38SQ8|HEMA_I83A8,89.6,566,0.0,998.0,100.0,100.0,59,0,1,566,1,566,566,566,89.6,566,0,0.0,Alternative match (lower alignment ranking).
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|Q2RCH5|HEMA_I80A4,89.9,566,0.0,995.0,100.0,100.0,57,0,1,566,1,566,566,566,89.9,566,0,0.0,Alternative match (lower alignment ranking).
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|Q2VND2|HEMA_I78A8,89.0,566,0.0,991.0,100.0,100.0,62,0,1,566,1,566,566,566,89.0,566,0,0.0,Alternative match (lower alignment ranking).
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|Q2VNF2|HEMA_I78A7,89.0,566,0.0,990.0,100.0,100.0,62,0,1,566,1,566,566,566,89.0,566,0,0.0,Alternative match (lower alignment ranking).
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|P03440|HEMA_I77A8,89.2,566,0.0,988.0,100.0,100.0,61,0,1,566,1,566,566,566,89.2,566,0,0.0,Alternative match (lower alignment ranking).
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|P26139|HEMA_I77A4,88.5,566,0.0,982.0,100.0,100.0,65,0,1,566,1,566,566,566,88.5,566,0,0.0,Alternative match (lower alignment ranking).
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|Q2RFA5|HEMA_I76A6,88.5,566,0.0,981.0,100.0,100.0,65,0,1,566,1,566,566,566,88.5,566,0,0.0,Alternative match (lower alignment ranking).
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|Q30NQ1|HEMA_I75A0,87.1,566,0.0,979.0,100.0,100.0,73,0,1,566,1,566,566,566,87.1,566,0,0.0,Alternative match (lower alignment ranking).
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|P03435|HEMA_I75A3,88.4,567,0.0,977.0,100.0,100.0,65,1,1,566,1,567,566,567,88.4,567,0,0.0,Alternative match (lower alignment ranking).
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|Q1PUD9|HEMA_I73A5,88.3,566,0.0,977.0,100.0,100.0,66,0,1,566,1,566,566,566,88.3,566,0,0.0,Alternative match (lower alignment ranking).
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|P03439|HEMA_I72A3,88.2,566,0.0,976.0,100.0,100.0,67,0,1,566,1,566,566,566,88.2,566,0,0.0,Alternative match (lower alignment ranking).
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|Q2ICR0|HEMA_I72A4,88.2,566,0.0,976.0,100.0,100.0,67,0,1,566,1,566,566,566,88.2,566,0,0.0,Alternative match (lower alignment ranking).
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|P12589|HEMA_I86A1,90.2,550,0.0,974.0,97.17,100.0,54,0,17,566,1,550,566,550,90.2,550,0,0.0,Alternative match (lower alignment ranking).
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|P19106|HEMA_I72A2,88.0,566,0.0,974.0,100.0,100.0,68,0,1,566,1,566,566,566,88.0,566,0,0.0,Alternative match (lower alignment ranking).
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|P03449|HEMA_I71A1,87.1,566,0.0,966.0,100.0,100.0,73,0,1,566,1,566,566,566,87.1,566,0,0.0,Alternative match (lower alignment ranking).
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|Q91MA7|HEMA_I68A4,86.7,566,0.0,960.0,100.0,100.0,75,0,1,566,1,566,566,566,86.7,566,0,0.0,Alternative match (lower alignment ranking).
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|P03436|HEMA_I68A6,86.6,566,0.0,958.0,100.0,100.0,76,0,1,566,1,566,566,566,86.6,566,0,0.0,Alternative match (lower alignment ranking).
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|P03437|HEMA_I68A0,86.4,566,0.0,958.0,100.0,100.0,77,0,1,566,1,566,566,566,86.4,566,0,0.0,Alternative match (lower alignment ranking).
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|P03438|HEMA_I000X,86.2,566,0.0,956.0,100.0,100.0,78,0,1,566,1,566,566,566,86.2,566,0,0.0,Alternative match (lower alignment ranking).
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|P03441|HEMA_I79A0,88.9,550,0.0,952.0,97.17,100.0,61,0,17,566,1,550,566,550,88.9,550,0,0.0,Alternative match (lower alignment ranking).
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|P12583|HEMA_I80A6,85.9,566,0.0,951.0,100.0,100.0,80,0,1,566,1,566,566,566,85.9,566,0,0.0,Alternative match (lower alignment ranking).
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|P03442|HEMA_I63A3,85.9,566,0.0,950.0,100.0,100.0,80,0,1,566,1,566,566,566,85.9,566,0,0.0,Alternative match (lower alignment ranking).
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|P26141|HEMA_I84A5,80.9,566,0.0,947.0,100.0,100.0,108,0,1,566,1,566,566,566,80.9,566,0,0.0,Alternative match (lower alignment ranking).
+ENA|CY000001|CY000001.1_predicted_orf_1,sp|Q03909|HEMA_I89A7,86.2,565,0.0,942.0,99.82,98.95,78,0,1,565,6,570,566,571,86.2,565,0,0.0,Alternative match (lower alignment ranking).

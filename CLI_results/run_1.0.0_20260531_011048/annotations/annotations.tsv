@@ -1,0 +1,85 @@
+protein_id	length_aa	annotation_status	uniprot_id	subject_db_id	description	evalue	e_val	bitscore	identity_percent	identity_pct	query_coverage	query_coverage_pct	subject_coverage	refined_identity	refined_length	annotation_confidence
+NC_007373.1_predicted_orf_1	759	Annotated	O91740	sp|O91740|PB2_I93A0	Homolog to sp|O91740|PB2_I93A0 (evalue: 0.0)	0.0	0.0	1469.0	98.95	98.95	100.0	100.0	100.0	98.95	759.0	0.9968
+NC_007373.1_predicted_orf_2	31	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007373.1_predicted_orf_3	55	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007373.1_predicted_orf_4	35	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007373.1_predicted_orf_5	78	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007373.1_predicted_orf_6	128	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007373.1_predicted_orf_7	39	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007373.1_predicted_orf_8	53	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007373.1_predicted_orf_9	101	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007373.1_predicted_orf_10	49	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007373.1_predicted_orf_11	76	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007373.1_predicted_orf_12	101	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007372.1_predicted_orf_1	70	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007372.1_predicted_orf_2	757	Annotated	O91741	sp|O91741|RDRP_I93A0	Homolog to sp|O91741|RDRP_I93A0 (evalue: 0.0)	0.0	0.0	1480.0	98.81	98.81	100.0	100.0	100.0	98.81	757.0	0.9964
+NC_007372.1_predicted_orf_3	38	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007372.1_predicted_orf_4	43	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007372.1_predicted_orf_5	51	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007372.1_predicted_orf_6	31	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007372.1_predicted_orf_7	37	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007372.1_predicted_orf_8	90	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007372.1_predicted_orf_9	36	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007372.1_predicted_orf_10	121	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007372.1_predicted_orf_11	41	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007372.1_predicted_orf_12	56	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007372.1_predicted_orf_13	47	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007372.1_predicted_orf_14	44	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007372.1_predicted_orf_15	49	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007372.1_predicted_orf_16	130	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007372.1_predicted_orf_17	61	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007371.1_predicted_orf_1	716	Annotated	O91742	sp|O91742|PA_I93A0	Homolog to sp|O91742|PA_I93A0 (evalue: 0.0)	0.0	0.0	1431.0	98.88	98.88	100.0	100.0	100.0	98.88	716.0	0.9966
+NC_007371.1_predicted_orf_2	45	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007371.1_predicted_orf_3	40	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007371.1_predicted_orf_4	89	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007371.1_predicted_orf_5	32	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007371.1_predicted_orf_6	32	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007371.1_predicted_orf_7	47	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007371.1_predicted_orf_8	76	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007371.1_predicted_orf_9	61	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007371.1_predicted_orf_10	64	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007371.1_predicted_orf_11	60	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007371.1_predicted_orf_12	38	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007366.1_predicted_orf_1	566	Annotated	O11283	sp|O11283|HEMA_I89A2	Homolog to sp|O11283|HEMA_I89A2 (evalue: 0.0)	0.0	0.0	1003.0	91.17	91.17	100.0	100.0	100.0	91.17	566.0	0.9735
+NC_007366.1_predicted_orf_2	40	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007366.1_predicted_orf_3	38	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007366.1_predicted_orf_4	36	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007366.1_predicted_orf_5	42	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007366.1_predicted_orf_6	47	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007366.1_predicted_orf_7	34	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007366.1_predicted_orf_8	35	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007366.1_predicted_orf_9	35	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007366.1_predicted_orf_10	123	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007366.1_predicted_orf_11	71	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007366.1_predicted_orf_12	64	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007366.1_predicted_orf_13	35	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007366.1_predicted_orf_14	30	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007369.1_predicted_orf_1	128	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007369.1_predicted_orf_2	36	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007369.1_predicted_orf_3	498	Annotated	P16982	sp|P16982|NCAP_I83A8	Homolog to sp|P16982|NCAP_I83A8 (evalue: 0.0)	0.0	0.0	956.0	96.39	96.39	100.0	100.0	100.0	96.39	498.0	0.9892
+NC_007369.1_predicted_orf_4	102	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007369.1_predicted_orf_5	108	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007369.1_predicted_orf_6	33	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007369.1_predicted_orf_7	69	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007369.1_predicted_orf_8	48	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007369.1_predicted_orf_9	47	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007368.1_predicted_orf_1	469	Annotated	O91745	sp|O91745|NRAM_I96A1	Homolog to sp|O91745|NRAM_I96A1 (evalue: 0.0)	0.0	0.0	937.0	95.52	95.52	100.0	100.0	100.0	95.52	469.0	0.9866
+NC_007368.1_predicted_orf_2	109	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007368.1_predicted_orf_3	95	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007368.1_predicted_orf_4	56	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007368.1_predicted_orf_5	38	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007368.1_predicted_orf_6	50	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007368.1_predicted_orf_7	39	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007368.1_predicted_orf_8	44	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007368.1_predicted_orf_9	32	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007370.1_predicted_orf_1	230	Annotated	Q67253	sp|Q67253|NS1_I89A1	Homolog to sp|Q67253|NS1_I89A1 (evalue: 1.66e-162)	1.66e-162	1.66e-162	447.0	98.7	98.7	100.0	100.0	100.0	98.7	230.0	0.9961
+NC_007370.1_predicted_orf_2	216	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007370.1_predicted_orf_3	123	Annotated	P69257	sp|P69257|NEP_I77A0	Homolog to sp|P69257|NEP_I77A0 (evalue: 1.03e-74)	1.03e-74	1.03e-74	216.0	99.12	99.12	91.87	91.87	93.39	99.12	113.0	0.8689
+NC_007367.1_predicted_orf_1	30	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007367.1_predicted_orf_2	252	Annotated	Q77GW1	sp|Q77GW1|M1_I89A2	Homolog to sp|Q77GW1|M1_I89A2 (evalue: 5.49e-172)	5.49e-172	5.49e-172	473.0	98.41	98.41	100.0	100.0	100.0	98.41	252.0	0.9952
+NC_007367.1_predicted_orf_3	111	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007367.1_predicted_orf_4	41	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007367.1_predicted_orf_5	41	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007367.1_predicted_orf_6	49	Hypothetical Protein		None	hypothetical protein											0.0
+NC_007367.1_predicted_orf_7	96	Annotated	Q38SQ7	sp|Q38SQ7|M2_I83A8	Homolog to sp|Q38SQ7|M2_I83A8 (evalue: 2.94e-62)	2.94e-62	2.94e-62	183.0	98.86	98.86	98.96	98.96	97.94	98.86	88.0	0.8396
+NC_007367.1_predicted_orf_8	68	Hypothetical Protein		None	hypothetical protein											0.0

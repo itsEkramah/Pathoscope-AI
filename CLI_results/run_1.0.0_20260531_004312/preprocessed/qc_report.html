@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PathoScope AI - Quality Control Analysis Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-main: #0b0f19;
+            --bg-card: rgba(17, 24, 39, 0.7);
+            --border-card: rgba(255, 255, 255, 0.08);
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --accent: #22d3ee;
+            --accent-green: #34d399;
+            --accent-red: #f87171;
+            --gradient: linear-gradient(135deg, #1e1b4b 0%, #0b0f19 100%);
+        }
+        
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            background-image: var(--gradient);
+            background-attachment: fixed;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .hero-banner {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-card);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 40px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero-banner h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3rem;
+            margin: 0;
+            font-weight: 800;
+            background: linear-gradient(90deg, #c084fc, var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero-banner p {
+            color: var(--text-muted);
+            font-size: 1.15rem;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-card);
+            border-radius: 16px;
+            padding: 25px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent);
+        }
+        
+        .card-header {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+        }
+        
+        .card-value {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent);
+        }
+        
+        .card-subvalue {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 5px;
+        }
+        
+        .split-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        @media (max-width: 900px) {
+            .split-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .table-container {
+            background: var(--bg-card);
+            border: 1px solid var(--border-card);
+            border-radius: 16px;
+            padding: 30px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .table-container h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.6rem;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-weight: 800;
+            border-left: 5px solid var(--accent);
+            padding-left: 15px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            text-align: left;
+            padding: 14px 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        th {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        td {
+            font-size: 1.05rem;
+        }
+        
+        .highlight {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .badge-success {
+            background: rgba(52, 211, 153, 0.1);
+            color: var(--accent-green);
+            border: 1px solid rgba(52, 211, 153, 0.2);
+        }
+        
+        .progress-bar-container {
+            background: rgba(255, 255, 255, 0.05);
+            height: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 15px;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-green) 0%, var(--accent) 100%);
+            border-radius: 5px;
+        }
+        
+        .console-box {
+            background: #020617;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.85rem;
+            color: #38bdf8;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Header Banner -->
+        <div class="hero-banner">
+            <h1>PathoScope AI Preprocessing Dashboard</h1>
+            <p>Auditable, scientifically defensible Sequence Quality Control & Preprocessing metrics</p>
+        </div>
+        
+        <!-- Key Metrics Cards -->
+        <div class="grid">
+            <div class="card">
+                <div class="card-header">Processed Reads</div>
+                <div class="card-value">1</div>
+                <div class="card-subvalue">Raw sequenced records analyzed</div>
+            </div>
+            <div class="card">
+                <div class="card-header">Passed QC Reads</div>
+                <div class="card-value" style="color: var(--accent-green);">1</div>
+                <div class="card-subvalue">Accepted for gene prediction (100.00%)</div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 100.0%;"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">N50 Statistics</div>
+                <div class="card-value">29,903 bp</div>
+                <div class="card-subvalue">Sequencing N50 length score</div>
+            </div>
+            <div class="card">
+                <div class="card-header">Mean GC Content</div>
+                <div class="card-value">37.97%</div>
+                <div class="card-subvalue">Mean nucleotide G-C bias ratio</div>
+            </div>
+        </div>
+        
+        <!-- Detailed Tables Grid -->
+        <div class="split-grid">
+            
+            <!-- Auditing Summary Table -->
+            <div class="table-container">
+                <h2>Pipeline Summary</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parameter description</th>
+                            <th>Value / Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Software Utilized</td>
+                            <td><span class="highlight">FASTA-Preprocessor</span></td>
+                        </tr>
+                        <tr>
+                            <td>Software version</td>
+                            <td>v1.0.0</td>
+                        </tr>
+                        <tr>
+                            <td>Bases Generated (Cleaned)</td>
+                            <td>29,903 bp</td>
+                        </tr>
+                        <tr>
+                            <td>Mean Read Length</td>
+                            <td>29903.0 bp</td>
+                        </tr>
+                        <tr>
+                            <td>Adapters Trimmed</td>
+                            <td>0 reads</td>
+                        </tr>
+                        <tr>
+                            <td>Discarded Reads</td>
+                            <td style="color: var(--accent-red); font-weight: 600;">0 (0.00%)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Software environment verification -->
+            <div class="table-container">
+                <h2>Workflow Audit</h2>
+                <div class="card-header" style="margin-bottom: 10px;">Execution Command</div>
+                <div class="console-box">python-fasta-cleaner</div>
+                
+                <div class="card-header" style="margin-top: 20px; margin-bottom: 10px;">Pipeline Metadata</div>
+                <div style="font-size: 0.9rem; line-height: 1.6;">
+                    <strong>Pipeline Name:</strong> PathoScope AI Default Run<br>
+                    <strong>Pipeline Version:</strong> v1.0.0<br>
+                    <strong>Timestamp:</strong> 2026-05-31 00:43:12
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+</html>
